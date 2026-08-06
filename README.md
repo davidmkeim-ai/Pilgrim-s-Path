@@ -1,56 +1,78 @@
-# Welcome to your Expo app 👋
+# Family Scripture App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A family scripture memorization app: profiles for everyone (no separate logins), spaced-repetition
+practice with an on-device speech listener, and a family journal/scrapbook that grows as you go.
+See [`AGENTS.md`](./AGENTS.md) and the architecture notes below before making changes.
 
-## Get started
+## Setup
 
-1. Install dependencies
+1. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. **Create a Supabase project** (or use an existing one) and copy `.env.example` to `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Fill in `EXPO_PUBLIC_SUPABASE_URL` and `EXPO_PUBLIC_SUPABASE_ANON_KEY` from your Supabase
+   project's API settings. `SUPABASE_SERVICE_ROLE_KEY` is only needed later, for content-seeding
+   scripts — never commit it.
+
+3. **Run the schema migration** — paste `supabase/migrations/0001_init.sql` into the Supabase SQL
+   Editor and run it. This creates all tables, Row Level Security policies, and the
+   `journal-media` storage bucket.
+
+4. **Create the one family login** — in Supabase Dashboard → Authentication → Users, add a single
+   user (e.g. your own email) with a password. This is the *one* shared login for the whole
+   family; individual profiles are created inside the app after signing in, no separate accounts
+   needed per person.
+
+5. **Start the app**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   Open in a development build (recommended, since speech recognition/audio need native modules —
+   Expo Go won't fully work) or run `npx eas build --profile development --platform ios` and
+   install via TestFlight.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Architecture
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Trails/waypoints/verses live in `/content` as JSON**, not in the database — see
+  [`src/lib/content.ts`](./src/lib/content.ts). This is deliberate: your curriculum (which verses,
+  in what order, grouped into what themes) is meant to evolve over time without a schema
+  migration. Add a new file under `content/trails/`, register it in `content.ts`, done.
+- **Supabase only stores dynamic family data** — profiles, memorization progress, journal entries,
+  practice attempts, map unlocks, challenge completions. These reference content by its stable
+  string id (e.g. `"creation-and-covenant-2"`), not a foreign key, since the content itself isn't
+  in Postgres.
+- **One shared Supabase Auth account** for the whole family (see step 4 above). Row Level Security
+  just checks "is authenticated" — no per-person auth, no family_id scoping, since each family runs
+  its own Supabase project. In-app profile switching (see
+  [`src/context/profile-context.tsx`](./src/context/profile-context.tsx)) is separate from that
+  auth session and just tracks who's "active" locally.
+- **Practice/scoring is fully on-device** — `expo-speech-recognition` transcribes, and
+  [`src/lib/verseMatch.ts`](./src/lib/verseMatch.ts) does a word-level LCS diff against the
+  bundled verse text. No AI call, no network dependency, for the core "did I say it right" loop.
+- **Spaced repetition** — [`src/lib/srs.ts`](./src/lib/srs.ts) implements SM-2; see
+  [`src/lib/progress.ts`](./src/lib/progress.ts) for how a practice score turns into the next
+  review date.
 
-## Get a fresh project
+## What's not built yet (see the plan)
 
-When you're ready, run:
+Map unlocks, weekly relational challenges, and the Claude-powered AI coach (hints + "find this
+verse" Q&A, restricted from answering theology) are staged as fast-follow phases — the
+`map_places`, `map_unlocks`, `challenges`, and `challenge_completions` tables already exist in the
+schema, but there's no UI for them yet.
 
-```bash
-npm run reset-project
-```
+## Verifying changes
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `npx tsc --noEmit` — typecheck
+- `npx expo export -p ios` — bundle-check without needing a simulator/Mac
+- `npx expo start` — run for real; speech recognition and audio recording need a physical device
+  or a development build, not the iOS Simulator/Expo Go

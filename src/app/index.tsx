@@ -1,98 +1,110 @@
-import * as Device from 'expo-device';
-import { Platform, StyleSheet } from 'react-native';
+import { useRouter } from 'expo-router';
+import { useCallback, useEffect, useState } from 'react';
+import { Pressable, ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AnimatedIcon } from '@/components/animated-icon';
-import { HintRow } from '@/components/hint-row';
+import { ProfileSwitcher } from '@/components/profile-switcher';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { WebBadge } from '@/components/web-badge';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
-
-function getDevMenuHint() {
-  if (Platform.OS === 'web') {
-    return <ThemedText type="small">use browser devtools</ThemedText>;
-  }
-  if (Device.isDevice) {
-    return (
-      <ThemedText type="small">
-        shake device or press <ThemedText type="code">m</ThemedText> in terminal
-      </ThemedText>
-    );
-  }
-  const shortcut = Platform.OS === 'android' ? 'cmd+m (or ctrl+m)' : 'cmd+d';
-  return (
-    <ThemedText type="small">
-      press <ThemedText type="code">{shortcut}</ThemedText>
-    </ThemedText>
-  );
-}
+import { MaxContentWidth, Spacing } from '@/constants/theme';
+import { useProfiles } from '@/context/profile-context';
+import { getAllPlaces, getWaypointById } from '@/lib/content';
+import { fetchUnlockedPlaceSlugs } from '@/lib/mapUnlocks';
+import { fetchDueWaypointIds } from '@/lib/progress';
+import { Waypoint } from '@/lib/types';
 
 export default function HomeScreen() {
+  const router = useRouter();
+  const { activeProfile } = useProfiles();
+  const [dueWaypoints, setDueWaypoints] = useState<Waypoint[]>([]);
+  const [loadingDue, setLoadingDue] = useState(false);
+  const [unlockedCount, setUnlockedCount] = useState<number | null>(null);
+  const totalPlaces = getAllPlaces().length;
+
+  const loadDue = useCallback(async () => {
+    if (!activeProfile) return;
+    setLoadingDue(true);
+    try {
+      const ids = await fetchDueWaypointIds(activeProfile.id);
+      const waypoints = ids
+        .map((id) => getWaypointById(id))
+        .filter((w): w is Waypoint => Boolean(w));
+      setDueWaypoints(waypoints);
+    } finally {
+      setLoadingDue(false);
+    }
+  }, [activeProfile]);
+
+  useEffect(() => {
+    loadDue();
+  }, [loadDue]);
+
+  useEffect(() => {
+    fetchUnlockedPlaceSlugs().then((slugs) => setUnlockedCount(slugs.length));
+  }, []);
+
   return (
     <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea}>
-        <ThemedView style={styles.heroSection}>
-          <AnimatedIcon />
+      <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
+        <ProfileSwitcher />
+
+        <ScrollView contentContainerStyle={styles.scrollContent}>
           <ThemedText type="title" style={styles.title}>
-            Welcome to&nbsp;Expo
+            {activeProfile ? `Hi, ${activeProfile.name}` : 'Welcome'}
           </ThemedText>
-        </ThemedView>
 
-        <ThemedText type="code" style={styles.code}>
-          get started
-        </ThemedText>
+          <ThemedView type="backgroundElement" style={styles.card}>
+            <ThemedText type="subtitle">Up for review</ThemedText>
+            {loadingDue && <ThemedText type="small">Loading…</ThemedText>}
+            {!loadingDue && dueWaypoints.length === 0 && (
+              <ThemedText type="small" themeColor="textSecondary">
+                Nothing due right now — head to Trails to start something new.
+              </ThemedText>
+            )}
+            {dueWaypoints.map((wp) => (
+              <Pressable
+                key={wp.id}
+                onPress={() => router.push({ pathname: '/bible-buddy', params: { waypointId: wp.id } })}
+                style={styles.dueRow}>
+                <ThemedText type="default">{wp.title}</ThemedText>
+                <ThemedText type="linkPrimary">Practice →</ThemedText>
+              </Pressable>
+            ))}
+          </ThemedView>
 
-        <ThemedView type="backgroundElement" style={styles.stepContainer}>
-          <HintRow
-            title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
-          />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
-          <HintRow
-            title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
-          />
-        </ThemedView>
-
-        {Platform.OS === 'web' && <WebBadge />}
+          <Pressable onPress={() => router.push('/map')}>
+            <ThemedView type="backgroundElement" style={styles.card}>
+              <ThemedText type="subtitle">The Map</ThemedText>
+              <ThemedText type="small" themeColor="textSecondary">
+                {unlockedCount === null
+                  ? 'Loading…'
+                  : `${unlockedCount} of ${totalPlaces} places discovered`}
+              </ThemedText>
+              <ThemedText type="linkPrimary">Explore the map →</ThemedText>
+            </ThemedView>
+          </Pressable>
+        </ScrollView>
       </SafeAreaView>
     </ThemedView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    flexDirection: 'row',
-  },
-  safeArea: {
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    alignItems: 'center',
+  container: { flex: 1 },
+  safeArea: { flex: 1 },
+  scrollContent: {
+    padding: Spacing.three,
     gap: Spacing.three,
-    paddingBottom: BottomTabInset + Spacing.three,
     maxWidth: MaxContentWidth,
+    alignSelf: 'center',
+    width: '100%',
   },
-  heroSection: {
+  title: { marginTop: Spacing.two },
+  card: { borderRadius: Spacing.three, padding: Spacing.three, gap: Spacing.two },
+  dueRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    gap: Spacing.four,
-  },
-  title: {
-    textAlign: 'center',
-  },
-  code: {
-    textTransform: 'uppercase',
-  },
-  stepContainer: {
-    gap: Spacing.three,
-    alignSelf: 'stretch',
-    paddingHorizontal: Spacing.three,
-    paddingVertical: Spacing.four,
-    borderRadius: Spacing.four,
+    paddingVertical: Spacing.two,
   },
 });

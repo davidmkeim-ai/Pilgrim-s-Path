@@ -7,20 +7,23 @@ import '@/global.css';
 
 import { Platform } from 'react-native';
 
+// Warm parchment palette, sampled from the app's map-illustration branding
+// (icon/banner), rather than the neutral grey default -- the whole app reads
+// as "old map/journal," not just the Journal and Bible Buddy screens.
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: '#2B2418',
+    background: '#F3EAD3',
+    backgroundElement: '#EADFC0',
+    backgroundSelected: '#DFCFA6',
+    textSecondary: '#6B5D45',
   },
   dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
+    text: '#F0E6D2',
+    background: '#1E1811',
+    backgroundElement: '#2A2219',
+    backgroundSelected: '#3A2F20',
+    textSecondary: '#B8A883',
   },
 } as const;
 

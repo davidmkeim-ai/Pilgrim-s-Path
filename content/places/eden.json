@@ -1,0 +1,12 @@
+{
+  "_readme": "Placeholder demo place so the map framework has something to unlock. Real places, map art, and unlock design belong to you -- add more files here (one per place) and register them in src/lib/content.ts.",
+  "slug": "eden",
+  "name": "The Garden of Eden",
+  "description": "Where God placed the first man and woman. Its exact location is unknown, but Genesis describes it as near four rivers, including the Tigris and Euphrates.",
+  "mapX": 0.5,
+  "mapY": 0.5,
+  "lat": 33.0,
+  "lng": 44.4,
+  "unlockedByWaypointIds": ["creation-and-covenant-2"],
+  "trailSlug": "creation-and-covenant"
+}

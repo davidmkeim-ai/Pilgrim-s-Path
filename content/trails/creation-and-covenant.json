@@ -1,0 +1,58 @@
+{
+  "slug": "creation-and-covenant",
+  "title": "Creation & Covenant",
+  "description": "A first trail through the opening chapters of Genesis: how the world began, what it means to be made in God's image, and his promise to Noah.",
+  "coverImage": null,
+  "sortOrder": 1,
+  "waypoints": [
+    {
+      "id": "creation-and-covenant-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "In the Beginning",
+      "body": "Before there was anything else, there was God. In six days he spoke the world into being — light, sky, land, plants, sun and moon and stars, sea creatures and birds, animals, and finally people — and he called it very good."
+    },
+    {
+      "id": "creation-and-covenant-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Genesis 1:1",
+      "verse": { "reference": "Genesis 1:1", "translation": "WEB" }
+    },
+    {
+      "id": "creation-and-covenant-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Psalm 19:1",
+      "verse": { "reference": "Psalm 19:1", "translation": "WEB" }
+    },
+    {
+      "id": "creation-and-covenant-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Genesis 1:27",
+      "verse": { "reference": "Genesis 1:27", "translation": "WEB" }
+    },
+    {
+      "id": "creation-and-covenant-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Made in His Image",
+      "body": "Draw or write about your favorite part of creation. Why do you think God made people different from the animals and plants?"
+    },
+    {
+      "id": "creation-and-covenant-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "Genesis 9:13",
+      "verse": { "reference": "Genesis 9:13", "translation": "WEB" }
+    },
+    {
+      "id": "creation-and-covenant-7",
+      "type": "challenge",
+      "sortOrder": 7,
+      "title": "Spot the Creator",
+      "body": "This week, find something in nature that reminds you God is the Creator, and tell a family member about it. Write what you found in the journal."
+    }
+  ]
+}

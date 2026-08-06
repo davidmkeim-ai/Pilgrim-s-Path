@@ -8,13 +8,21 @@
       ],
       "@/assets/*": [
         "./assets/*"
+      ],
+      "@/content/*": [
+        "./content/*"
       ]
-    }
+    },
+    "resolveJsonModule": true
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "supabase/functions"
   ]
 }
