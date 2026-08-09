@@ -1,4 +1,5 @@
 import { useRouter } from 'expo-router';
+import { Image } from 'expo-image';
 import { useCallback, useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
@@ -12,6 +13,8 @@ import { useTheme } from '@/hooks/use-theme';
 import { getAllPlaces } from '@/lib/content';
 import { fetchUnlockedPlaceSlugs } from '@/lib/mapUnlocks';
 import { Place } from '@/lib/types';
+
+const BASE_MAP = require('@/assets/map/base-map.jpg');
 
 const MIN_SCALE = 1;
 const MAX_SCALE = 4;
@@ -129,23 +132,23 @@ export default function MapScreen() {
         </View>
 
         <View style={[styles.viewport, { backgroundColor: theme.backgroundElement }]}>
-          {allPlaces.length === 0 ? (
+          <GestureDetector gesture={composedGesture}>
+            <Animated.View style={[styles.mapCanvas, animatedStyle]}>
+              <Image source={BASE_MAP} style={styles.mapImage} contentFit="cover" />
+              {allPlaces.map((place) => (
+                <MapPin
+                  key={place.slug}
+                  place={place}
+                  unlocked={unlockedSlugs.has(place.slug)}
+                  onOpen={() => openTrail(place)}
+                />
+              ))}
+            </Animated.View>
+          </GestureDetector>
+          {allPlaces.length === 0 && (
             <ThemedText type="small" themeColor="textSecondary" style={styles.emptyText}>
               No places yet — check back as your family's trails grow.
             </ThemedText>
-          ) : (
-            <GestureDetector gesture={composedGesture}>
-              <Animated.View style={[styles.mapCanvas, animatedStyle]}>
-                {allPlaces.map((place) => (
-                  <MapPin
-                    key={place.slug}
-                    place={place}
-                    unlocked={unlockedSlugs.has(place.slug)}
-                    onOpen={() => openTrail(place)}
-                  />
-                ))}
-              </Animated.View>
-            </GestureDetector>
           )}
         </View>
 
@@ -169,6 +172,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   mapCanvas: { flex: 1 },
+  mapImage: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
   emptyText: {
     position: 'absolute',
     top: '50%',

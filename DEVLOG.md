@@ -125,6 +125,15 @@ Running record of what's been built, why, and where things live — kept for fut
 - Screen restructured to drop the outer `ScrollView` in favor of a fixed header + flex-filled map viewport, specifically to avoid gesture conflicts between the map's own pan gesture and a page-level scroll gesture (both trying to claim vertical drag).
 - **Not verified on-device** -- gesture interactions (especially pan vs. Pressable tap conflicts, and whether `GestureHandlerRootView` needed any other wiring) are inherently something that needs a real touchscreen to confirm; typecheck/lint are clean but that's not the same as confirming the feel is right. Please test pinch/pan/tap directly and report back if anything feels off (e.g. taps not registering, pan fighting with pin taps).
 
+## Map artwork: real AI-generated terrain image
+
+- Replaced the flat background color behind the map pins with a real illustrated map image (`assets/map/base-map.jpg`), rendered via `expo-image` and absolutely positioned to fill the gesture canvas behind the pins.
+- Source: user-generated via their own AI image tool, from a prompt I wrote specifying the brief -- aerial/top-down illustrated fantasy map style, a walled circular garden (Garden of Eden) at the exact center with four rivers flowing outward to the four edges (the Genesis 2:10 "four rivers" motif), surrounding terrain a mix of green hills and golden-brown wilderness with forest clusters and mountains at the corners. Original file saved to the user's own Pictures folder, not sourced from any stock/CC0 library -- provenance is "user's own AI-generated commission," not a licensed third-party asset.
+- Processing: the user generated a second, larger pass ("Pilgrim's Path World Map", 4096x4096 PNG) after seeing an initial lower-res version -- that's the one actually bundled. Converted straight to JPEG quality 90 via `sharp` (no upscaling needed), landing at ~3.6MB in `assets/map/base-map.jpg`. Plenty of headroom for the map's 4x pinch-zoom.
+- The "no places yet" empty-state message now overlays on top of the map image instead of replacing it, so the terrain art always renders regardless of place data.
+- Deliberately did *not* build a procedural/programmatic placeholder for this -- the user has a working AI-image-generation workflow they wanted used for real art from the start, not code-generated filler.
+- Architected to be layered on later (buildings, decorations) and expandable (more terrain/trails) -- this is just the base terrain layer. The "everything shrouded in black except the first pin" fog-of-war-over-terrain idea is explicitly future work, not part of this pass.
+
 ## Open items / known rough edges
 
 - Bundled WEB verse text in `content/verses/web.json` is placeholder (reconstructed from memory) — verify against an authoritative source before real family use.
