@@ -1,0 +1,44 @@
+{
+  "slug": "faithfulness",
+  "title": "Faithfulness",
+  "description": "Faithfulness means keeping your word and staying steady even when it's inconvenient — one of God's own core traits, and one he grows in us.",
+  "coverImage": null,
+  "sortOrder": 16,
+  "waypoints": [
+    {
+      "id": "faithfulness-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Steady and True",
+      "body": "God has never once broken a promise, even when his people were unfaithful to him over and over. His faithfulness is the foundation we can build our own on."
+    },
+    {
+      "id": "faithfulness-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Lamentations 3:22-23",
+      "verse": { "reference": "Lamentations 3:22-23", "translation": "WEB" }
+    },
+    {
+      "id": "faithfulness-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "1 Corinthians 4:2",
+      "verse": { "reference": "1 Corinthians 4:2", "translation": "WEB" }
+    },
+    {
+      "id": "faithfulness-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Deuteronomy 7:9",
+      "verse": { "reference": "Deuteronomy 7:9", "translation": "WEB" }
+    },
+    {
+      "id": "faithfulness-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Someone Faithful",
+      "body": "Who is someone faithful in your life -- who always keeps their promises? Thank them this week."
+    }
+  ]
+}

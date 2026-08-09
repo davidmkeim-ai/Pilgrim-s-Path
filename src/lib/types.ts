@@ -79,4 +79,6 @@ export interface Place {
   unlockedByWaypointIds: string[];
   /** The trail this place's pin opens (whether locked or unlocked) -- lets the map act as a visual entry point into trails. */
   trailSlug: string;
+  /** Slug of the place this one's path connects from, for drawing route lines on the map. Undefined for the root place (Eden). */
+  connectsFrom?: string;
 }

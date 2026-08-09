@@ -1,0 +1,44 @@
+{
+  "slug": "patience",
+  "title": "Patience",
+  "description": "Patience means waiting well — trusting God's timing instead of getting frustrated or giving up.",
+  "coverImage": null,
+  "sortOrder": 18,
+  "waypoints": [
+    {
+      "id": "patience-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Waiting Well",
+      "body": "Waiting is hard, especially for something you really want. The Bible doesn't tell us waiting is easy -- it tells us who to trust while we wait."
+    },
+    {
+      "id": "patience-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "James 1:4",
+      "verse": { "reference": "James 1:4", "translation": "WEB" }
+    },
+    {
+      "id": "patience-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Psalm 27:14",
+      "verse": { "reference": "Psalm 27:14", "translation": "WEB" }
+    },
+    {
+      "id": "patience-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Ecclesiastes 7:8",
+      "verse": { "reference": "Ecclesiastes 7:8", "translation": "WEB" }
+    },
+    {
+      "id": "patience-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Waiting for Something",
+      "body": "Tell about a time you had to wait for something. Was it hard to be patient? What helped?"
+    }
+  ]
+}

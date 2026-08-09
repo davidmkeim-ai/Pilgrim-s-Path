@@ -1,0 +1,10 @@
+{
+  "slug": "heaven",
+  "name": "Heaven",
+  "description": "The furthest point on the map — the journey's final destination, where every tear is wiped away.",
+  "mapX": 0.49,
+  "mapY": 0.03,
+  "unlockedByWaypointIds": ["heaven-2"],
+  "trailSlug": "heaven",
+  "connectsFrom": "holy-spirit"
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "the-church",
+  "name": "The Church",
+  "description": "Where God's people gather worldwide to worship, learn, and encourage each other.",
+  "mapX": 0.48,
+  "mapY": 0.1,
+  "unlockedByWaypointIds": ["the-church-2"],
+  "trailSlug": "the-church",
+  "connectsFrom": "romans-road"
+}

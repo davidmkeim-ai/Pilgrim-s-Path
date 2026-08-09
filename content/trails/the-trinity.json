@@ -1,0 +1,44 @@
+{
+  "slug": "the-trinity",
+  "title": "The Trinity",
+  "description": "God is one God who exists eternally as three persons — Father, Son, and Holy Spirit — equal in glory, united in purpose.",
+  "coverImage": null,
+  "sortOrder": 8,
+  "waypoints": [
+    {
+      "id": "the-trinity-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "One God, Three Persons",
+      "body": "This is a mystery no human illustration fully captures, but the Bible plainly reveals all three persons: the Father who sent, the Son who came, and the Holy Spirit who dwells in believers -- one God, not three."
+    },
+    {
+      "id": "the-trinity-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Matthew 28:19",
+      "verse": { "reference": "Matthew 28:19", "translation": "WEB" }
+    },
+    {
+      "id": "the-trinity-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "2 Corinthians 13:14",
+      "verse": { "reference": "2 Corinthians 13:14", "translation": "WEB" }
+    },
+    {
+      "id": "the-trinity-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Genesis 1:26",
+      "verse": { "reference": "Genesis 1:26", "translation": "WEB" }
+    },
+    {
+      "id": "the-trinity-5",
+      "type": "challenge",
+      "sortOrder": 5,
+      "title": "Spot the Three",
+      "body": "This week, notice one thing the Father does, one thing Jesus does, and one thing the Holy Spirit does in the Bible stories you hear, and talk about it as a family."
+    }
+  ]
+}

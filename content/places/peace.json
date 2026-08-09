@@ -1,0 +1,10 @@
+{
+  "slug": "peace",
+  "name": "Peace",
+  "description": "The deep calm that comes from trusting God, even in hard circumstances.",
+  "mapX": 0.84,
+  "mapY": 0.375,
+  "unlockedByWaypointIds": ["peace-2"],
+  "trailSlug": "peace",
+  "connectsFrom": "patience"
+}

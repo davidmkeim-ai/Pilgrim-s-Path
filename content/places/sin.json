@@ -1,0 +1,10 @@
+{
+  "slug": "sin",
+  "name": "Sin",
+  "description": "The problem every person shares — and the starting point of the road to the gospel.",
+  "mapX": 0.5,
+  "mapY": 0.42,
+  "unlockedByWaypointIds": ["sin-2"],
+  "trailSlug": "sin",
+  "connectsFrom": "eden"
+}

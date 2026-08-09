@@ -1,0 +1,44 @@
+{
+  "slug": "messianic-prophecy",
+  "title": "Messianic Prophecy",
+  "description": "Hundreds of years before Jesus was born, God's prophets described exactly what the promised Messiah would be like. Jesus fulfilled every one of them.",
+  "coverImage": null,
+  "sortOrder": 6,
+  "waypoints": [
+    {
+      "id": "messianic-prophecy-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Promised Long Before",
+      "body": "Starting all the way back in the garden, God kept promising a Rescuer. Prophets described where he'd be born, how he'd suffer for others, and what his kingdom would be like -- centuries before it happened."
+    },
+    {
+      "id": "messianic-prophecy-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Micah 5:2",
+      "verse": { "reference": "Micah 5:2", "translation": "WEB" }
+    },
+    {
+      "id": "messianic-prophecy-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Isaiah 53:5",
+      "verse": { "reference": "Isaiah 53:5", "translation": "WEB" }
+    },
+    {
+      "id": "messianic-prophecy-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Isaiah 9:6",
+      "verse": { "reference": "Isaiah 9:6", "translation": "WEB" }
+    },
+    {
+      "id": "messianic-prophecy-5",
+      "type": "challenge",
+      "sortOrder": 5,
+      "title": "Promise and Fulfillment",
+      "body": "Look up one Old Testament prophecy about Jesus and one New Testament verse that shows it came true. Share what you found at dinner."
+    }
+  ]
+}

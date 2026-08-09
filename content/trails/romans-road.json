@@ -1,0 +1,58 @@
+{
+  "slug": "romans-road",
+  "title": "Romans Road",
+  "description": "A path of verses through the book of Romans that walks through why we need Jesus and how to trust him.",
+  "coverImage": null,
+  "sortOrder": 9,
+  "waypoints": [
+    {
+      "id": "romans-road-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "A Path Through Romans",
+      "body": "The book of Romans lays out God's plan of salvation so clearly that people call it the 'Romans Road' -- five verses that walk from the problem (sin) to the solution (Jesus) to the response (trusting him)."
+    },
+    {
+      "id": "romans-road-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Romans 3:23",
+      "verse": { "reference": "Romans 3:23", "translation": "WEB" }
+    },
+    {
+      "id": "romans-road-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Romans 6:23",
+      "verse": { "reference": "Romans 6:23", "translation": "WEB" }
+    },
+    {
+      "id": "romans-road-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Romans 5:8",
+      "verse": { "reference": "Romans 5:8", "translation": "WEB" }
+    },
+    {
+      "id": "romans-road-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "Romans 10:9",
+      "verse": { "reference": "Romans 10:9", "translation": "WEB" }
+    },
+    {
+      "id": "romans-road-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "Romans 10:13",
+      "verse": { "reference": "Romans 10:13", "translation": "WEB" }
+    },
+    {
+      "id": "romans-road-7",
+      "type": "journal_prompt",
+      "sortOrder": 7,
+      "title": "Walk the Road",
+      "body": "Walk through the Romans Road out loud with a parent, one verse at a time. Is there a step you want to talk more about?"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "heaven",
+  "title": "Heaven",
+  "description": "The Bible's story doesn't end with death — it ends with resurrection. Jesus rose bodily, and everyone who trusts him will one day rise too.",
+  "coverImage": null,
+  "sortOrder": 12,
+  "waypoints": [
+    {
+      "id": "heaven-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Not the End",
+      "body": "Jesus rose bodily from the grave on the third day. Because he rose, everyone who trusts him will one day rise too, to live forever in a renewed creation where sadness and death are gone for good."
+    },
+    {
+      "id": "heaven-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "John 11:25",
+      "verse": { "reference": "John 11:25", "translation": "WEB" }
+    },
+    {
+      "id": "heaven-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "1 Corinthians 15:20",
+      "verse": { "reference": "1 Corinthians 15:20", "translation": "WEB" }
+    },
+    {
+      "id": "heaven-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Revelation 21:4",
+      "verse": { "reference": "Revelation 21:4", "translation": "WEB" }
+    },
+    {
+      "id": "heaven-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Looking Forward",
+      "body": "What are you most looking forward to about heaven?"
+    }
+  ]
+}

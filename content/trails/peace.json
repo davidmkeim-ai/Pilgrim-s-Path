@@ -1,0 +1,44 @@
+{
+  "slug": "peace",
+  "title": "Peace",
+  "description": "Real peace isn't just the absence of noise or trouble — it's the deep calm that comes from trusting God, even in hard circumstances.",
+  "coverImage": null,
+  "sortOrder": 19,
+  "waypoints": [
+    {
+      "id": "peace-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "A Different Kind of Calm",
+      "body": "Jesus told his followers he was leaving them a peace unlike anything the world offers -- one that doesn't depend on circumstances going well."
+    },
+    {
+      "id": "peace-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "John 14:27",
+      "verse": { "reference": "John 14:27", "translation": "WEB" }
+    },
+    {
+      "id": "peace-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Philippians 4:7",
+      "verse": { "reference": "Philippians 4:7", "translation": "WEB" }
+    },
+    {
+      "id": "peace-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Isaiah 26:3",
+      "verse": { "reference": "Isaiah 26:3", "translation": "WEB" }
+    },
+    {
+      "id": "peace-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "What Helps You Feel Calm",
+      "body": "What helps you feel calm and peaceful when you're worried?"
+    }
+  ]
+}

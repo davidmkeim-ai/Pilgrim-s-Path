@@ -1,0 +1,10 @@
+{
+  "slug": "books-of-the-bible",
+  "name": "Books of the Bible",
+  "description": "A map of the Bible's own library — 66 books grouped into families that tell one true story.",
+  "mapX": 0.26,
+  "mapY": 0.47,
+  "unlockedByWaypointIds": ["books-of-the-bible-9"],
+  "trailSlug": "books-of-the-bible",
+  "connectsFrom": "psalms-highlights"
+}

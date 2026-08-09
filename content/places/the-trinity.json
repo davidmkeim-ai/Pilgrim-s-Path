@@ -1,0 +1,10 @@
+{
+  "slug": "the-trinity",
+  "name": "The Trinity",
+  "description": "One God, three persons — Father, Son, and Holy Spirit — the deep mystery at the center of who God is.",
+  "mapX": 0.49,
+  "mapY": 0.21,
+  "unlockedByWaypointIds": ["the-trinity-2"],
+  "trailSlug": "the-trinity",
+  "connectsFrom": "covenants"
+}

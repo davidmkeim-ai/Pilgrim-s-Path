@@ -1,0 +1,44 @@
+{
+  "slug": "prayer",
+  "title": "Prayer",
+  "description": "Prayer is simply talking with God — praising him, saying thank you, admitting where we've gone wrong, and asking for what we need.",
+  "coverImage": null,
+  "sortOrder": 26,
+  "waypoints": [
+    {
+      "id": "prayer-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Talking With God",
+      "body": "Prayer isn't a formula -- it's a conversation. Jesus taught his followers exactly how to pray when they asked him, giving a simple pattern anyone can follow."
+    },
+    {
+      "id": "prayer-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "The Lord's Prayer — Matthew 6:9-13",
+      "verse": { "reference": "Matthew 6:9-13", "translation": "WEB" }
+    },
+    {
+      "id": "prayer-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Philippians 4:6",
+      "verse": { "reference": "Philippians 4:6", "translation": "WEB" }
+    },
+    {
+      "id": "prayer-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "1 Thessalonians 5:17",
+      "verse": { "reference": "1 Thessalonians 5:17", "translation": "WEB" }
+    },
+    {
+      "id": "prayer-5",
+      "type": "challenge",
+      "sortOrder": 5,
+      "title": "One Sentence Each",
+      "body": "As a family, take turns each praying one sentence out loud tonight -- one thank you, one sorry, one please."
+    }
+  ]
+}

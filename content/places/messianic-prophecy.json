@@ -1,0 +1,10 @@
+{
+  "slug": "messianic-prophecy",
+  "name": "Messianic Prophecy",
+  "description": "Where the prophets stood, looking centuries ahead to describe the Rescuer God had promised.",
+  "mapX": 0.47,
+  "mapY": 0.35,
+  "unlockedByWaypointIds": ["messianic-prophecy-2"],
+  "trailSlug": "messianic-prophecy",
+  "connectsFrom": "sin"
+}

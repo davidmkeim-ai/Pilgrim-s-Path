@@ -1,0 +1,51 @@
+{
+  "slug": "covenants",
+  "title": "The Covenants",
+  "description": "Four of God's biggest promises shape the whole Bible story: to Abraham, through Moses, to David, and the new covenant sealed by Jesus.",
+  "coverImage": null,
+  "sortOrder": 7,
+  "waypoints": [
+    {
+      "id": "covenants-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "God's Promises",
+      "body": "Throughout the Bible, God makes covenants -- solemn, binding promises -- with his people. He always keeps them, even when people don't."
+    },
+    {
+      "id": "covenants-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "The Abrahamic Covenant — Genesis 17:7",
+      "verse": { "reference": "Genesis 17:7", "translation": "WEB" }
+    },
+    {
+      "id": "covenants-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "The Mosaic Covenant — Exodus 19:5",
+      "verse": { "reference": "Exodus 19:5", "translation": "WEB" }
+    },
+    {
+      "id": "covenants-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "The Davidic Covenant — 2 Samuel 7:16",
+      "verse": { "reference": "2 Samuel 7:16", "translation": "WEB" }
+    },
+    {
+      "id": "covenants-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "The New Covenant — Luke 22:20",
+      "verse": { "reference": "Luke 22:20", "translation": "WEB" }
+    },
+    {
+      "id": "covenants-6",
+      "type": "journal_prompt",
+      "sortOrder": 6,
+      "title": "Which Promise?",
+      "body": "Which of God's four promises means the most to you right now, and why?"
+    }
+  ]
+}

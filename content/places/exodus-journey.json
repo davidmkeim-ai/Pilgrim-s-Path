@@ -1,0 +1,10 @@
+{
+  "slug": "exodus-journey",
+  "name": "The Exodus Journey",
+  "description": "Out of slavery in Egypt, through the wilderness, to the edge of the Promised Land.",
+  "mapX": 0.53,
+  "mapY": 0.8,
+  "unlockedByWaypointIds": ["exodus-journey-2"],
+  "trailSlug": "exodus-journey",
+  "connectsFrom": "patriarchs"
+}

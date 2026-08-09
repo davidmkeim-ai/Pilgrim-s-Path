@@ -1,0 +1,44 @@
+{
+  "slug": "discipleship",
+  "title": "Discipleship",
+  "description": "A disciple is a student who follows their teacher's whole way of life. Jesus invited ordinary people to leave what they were doing and follow him.",
+  "coverImage": null,
+  "sortOrder": 15,
+  "waypoints": [
+    {
+      "id": "discipleship-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Following Jesus",
+      "body": "Jesus' first followers were fishermen, tax collectors, and ordinary people who left what they were doing to follow him -- learning not just his words but his whole way of life."
+    },
+    {
+      "id": "discipleship-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Matthew 4:19",
+      "verse": { "reference": "Matthew 4:19", "translation": "WEB" }
+    },
+    {
+      "id": "discipleship-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Luke 9:23",
+      "verse": { "reference": "Luke 9:23", "translation": "WEB" }
+    },
+    {
+      "id": "discipleship-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Matthew 28:19-20",
+      "verse": { "reference": "Matthew 28:19-20", "translation": "WEB" }
+    },
+    {
+      "id": "discipleship-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Everyday Following",
+      "body": "What does 'following Jesus' look like in your everyday life -- at school, with friends, at home?"
+    }
+  ]
+}

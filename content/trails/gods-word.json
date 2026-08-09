@@ -1,0 +1,44 @@
+{
+  "slug": "gods-word",
+  "title": "God's Word",
+  "description": "Psalm 119 — the longest chapter in the Bible — is all about loving and living by God's Word. It shows how Scripture guides, protects, and gives joy.",
+  "coverImage": null,
+  "sortOrder": 23,
+  "waypoints": [
+    {
+      "id": "gods-word-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "A Lamp and a Light",
+      "body": "Psalm 119 has 176 verses, all about one thing: how much the writer loves God's Word. It shows Scripture as a lamp for dark paths, a guard against sin, and a source of joy."
+    },
+    {
+      "id": "gods-word-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Psalm 119:105",
+      "verse": { "reference": "Psalm 119:105", "translation": "WEB" }
+    },
+    {
+      "id": "gods-word-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Psalm 119:11",
+      "verse": { "reference": "Psalm 119:11", "translation": "WEB" }
+    },
+    {
+      "id": "gods-word-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "2 Timothy 3:16-17",
+      "verse": { "reference": "2 Timothy 3:16-17", "translation": "WEB" }
+    },
+    {
+      "id": "gods-word-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "A Verse That Guided You",
+      "body": "What's one verse that has helped guide a decision you made? If you can't think of one yet, that's okay -- keep hiding God's word in your heart."
+    }
+  ]
+}

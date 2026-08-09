@@ -1,0 +1,44 @@
+{
+  "slug": "obedience",
+  "title": "Obedience",
+  "description": "Obeying God isn't about earning his love — it's the natural response of loving him back, and it's for our good.",
+  "coverImage": null,
+  "sortOrder": 14,
+  "waypoints": [
+    {
+      "id": "obedience-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Love in Action",
+      "body": "Jesus said loving him and obeying him go together -- not as a way to earn his favor, but as the natural response of someone who already has it."
+    },
+    {
+      "id": "obedience-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "John 14:15",
+      "verse": { "reference": "John 14:15", "translation": "WEB" }
+    },
+    {
+      "id": "obedience-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "1 Samuel 15:22",
+      "verse": { "reference": "1 Samuel 15:22", "translation": "WEB" }
+    },
+    {
+      "id": "obedience-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Ephesians 6:1",
+      "verse": { "reference": "Ephesians 6:1", "translation": "WEB" }
+    },
+    {
+      "id": "obedience-5",
+      "type": "challenge",
+      "sortOrder": 5,
+      "title": "First Time, Cheerful",
+      "body": "Practice quick, cheerful obedience the first time you're asked this week -- no arguing, no repeating."
+    }
+  ]
+}

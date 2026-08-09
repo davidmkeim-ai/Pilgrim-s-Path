@@ -1,0 +1,10 @@
+{
+  "slug": "endurance",
+  "name": "Growth & Endurance",
+  "description": "The long race of following Jesus — where God grows something stronger in us through hard seasons.",
+  "mapX": 0.76,
+  "mapY": 0.42,
+  "unlockedByWaypointIds": ["endurance-2"],
+  "trailSlug": "endurance",
+  "connectsFrom": "faithfulness"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "sin",
+  "title": "Sin",
+  "description": "Sin means missing the mark of who God made us to be. Every person has sinned, which is why we need a Savior.",
+  "coverImage": null,
+  "sortOrder": 5,
+  "waypoints": [
+    {
+      "id": "sin-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Missing the Mark",
+      "body": "Sin is thinking, saying, or doing anything that goes against God's good design -- and it isn't just the 'big' wrongs. Every person, from the first family to us today, has sinned. But God didn't leave us stuck there."
+    },
+    {
+      "id": "sin-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Romans 3:23",
+      "verse": { "reference": "Romans 3:23", "translation": "WEB" }
+    },
+    {
+      "id": "sin-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Romans 6:23",
+      "verse": { "reference": "Romans 6:23", "translation": "WEB" }
+    },
+    {
+      "id": "sin-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "1 John 1:9",
+      "verse": { "reference": "1 John 1:9", "translation": "WEB" }
+    },
+    {
+      "id": "sin-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Honest with God",
+      "body": "Is there something you've been afraid to admit to God or a parent? 1 John 1:9 promises that confessing it brings forgiveness, not punishment. Talk about why that's good news."
+    }
+  ]
+}

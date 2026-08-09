@@ -134,10 +134,25 @@ Running record of what's been built, why, and where things live — kept for fut
 - Deliberately did *not* build a procedural/programmatic placeholder for this -- the user has a working AI-image-generation workflow they wanted used for real art from the start, not code-generated filler.
 - Architected to be layered on later (buildings, decorations) and expandable (more terrain/trails) -- this is just the base terrain layer. The "everything shrouded in black except the first pin" fog-of-war-over-terrain idea is explicitly future work, not part of this pass.
 
+## 26 new trails + branching map paths
+
+- Authored the family's full curriculum outline as 26 new trail JSON files under `/content/trails`, following the exact same format as the original `creation-and-covenant.json` -- fully hand-editable, no schema changes. Each trail is a `story` intro, 2-5 `verse` waypoints, and a closing `journal_prompt` or `challenge`; `books-of-the-bible.json` is structural (mostly `story` waypoints, one per book grouping) rather than memorization-focused, and `creeds.json` is a deliberate placeholder (`_readme` field explains it) with a single "Coming Soon" story waypoint and no verses -- its place therefore has `unlockedByWaypointIds: []` and will never auto-unlock until real creed lines are added later.
+- Added ~72 new verse text entries to `content/verses/web.json`, reorganized in canonical Bible-book order (was previously just 4 entries in file order) to make it easier to find and hand-edit entries as the curriculum grows. Same accuracy caveat as before applies -- reconstructed from memory, not yet checked against an authoritative WEB source.
+- **Map paths**: added 26 new `Place` entries (one per new trail) and a new optional `Place.connectsFrom` field (a parent place's slug) so the map can render route lines, not just isolated pins. Places are laid out along the four rivers already present in the base map art, radiating from Eden as four separate branching paths a family can explore in any order:
+  - **South** (the historical Old Testament spine): Eden -> Fall -> Patriarchs -> Exodus Journey.
+  - **North** (the gospel arc): Eden -> Sin -> Messianic Prophecy -> Covenants -> Trinity -> Romans Road -> Church -> Holy Spirit -> Heaven (placed at the map's very edge -- the furthest point from the garden, intentionally).
+  - **East** (Christian character growth): Eden -> War Within -> Obedience -> Discipleship -> Faithfulness -> Endurance -> Patience -> Peace -> Love One Another -> Grace -> Mercy.
+  - **West** (Scripture & worship): Eden -> God's Word -> Highlights of Psalms -> Books of the Bible -> Prayer -> Creeds (placeholder).
+- Unlocking stays independent per place (mastering a trail's first verse unlocks its own pin) -- paths don't gate each other, so a family can jump straight to any branch rather than being forced to go in path order.
+- Installed `react-native-svg` (new native module -- **requires a fresh EAS development build**, same as `expo-speech` was) and render path lines as a new `Svg` layer between the terrain image and the pins in `map.tsx`. Uses `viewBox="0 0 1 1"` with `preserveAspectRatio="none"` so line coordinates share the exact same 0-1 fractional space as the existing `mapX`/`mapY` pin positioning -- no separate coordinate system to keep in sync. Each path segment is drawn as two overlaid `Line`s (a soft dark underline + a light dashed overlay) for a hand-drawn trail look against the varied terrain colors, using `vectorEffect="non-scaling-stroke"` so line thickness stays constant through pinch-zoom.
+- Kicked off a new EAS development build (`eas build --profile development --platform ios`) to pick up the native module -- until that's installed on-device, the path lines/new trails won't render, but everything is JS/content otherwise and needs no other native change.
+- **Not yet verified on-device** -- same caveat as the earlier gesture work: needs a real device (and the new dev-client build) to confirm the path lines render correctly, don't visually clash with the terrain art, and that 27 pins at this density are still tappable without overlap.
+
 ## Open items / known rough edges
 
 - Bundled WEB verse text in `content/verses/web.json` is placeholder (reconstructed from memory) — verify against an authoritative source before real family use.
-- Weekly challenges, creeds/catechism content: schema exists (`challenges`, `challenge_completions`) but no UI yet. Map now has working mechanics (see above) but needs real places, art, and facts/photos.
+- Weekly challenges: schema exists (`challenges`, `challenge_completions`) but no UI yet. Creeds content is intentionally a placeholder trail (see above) -- add real creed lines when ready.
+- The 26 new trails were authored in one pass and haven't been reviewed verse-by-verse by the family yet -- treat them as a strong first draft of the curriculum, not final.
 - Journal/scrapbook is functional but visually plain — the "worn paper, flippable pages, handwriting" scrapbook redesign is a planned future project, not started.
 - Only tested via Expo dev-client builds so far — no App Store/TestFlight submission (`eas submit`) yet.
 - Segmented recitation's 90%-coverage auto-completion threshold and the help/done trigger phrase lists (`src/lib/voice.ts`) are first-pass numbers — expect to tune after real family use.

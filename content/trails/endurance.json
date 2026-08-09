@@ -1,0 +1,44 @@
+{
+  "slug": "endurance",
+  "title": "Growth, Endurance & Perseverance",
+  "description": "Following Jesus is a lifelong race, not a sprint. God grows us through hard seasons and promises to finish the good work he started.",
+  "coverImage": null,
+  "sortOrder": 17,
+  "waypoints": [
+    {
+      "id": "endurance-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "A Lifelong Race",
+      "body": "God doesn't grow us all at once -- he grows us through seasons, including hard ones. Every struggle is a chance for him to build something stronger in us."
+    },
+    {
+      "id": "endurance-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Philippians 1:6",
+      "verse": { "reference": "Philippians 1:6", "translation": "WEB" }
+    },
+    {
+      "id": "endurance-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "James 1:2-3",
+      "verse": { "reference": "James 1:2-3", "translation": "WEB" }
+    },
+    {
+      "id": "endurance-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Hebrews 12:1",
+      "verse": { "reference": "Hebrews 12:1", "translation": "WEB" }
+    },
+    {
+      "id": "endurance-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Kept Going",
+      "body": "What's something hard you kept trying at even when you wanted to quit? How did God help you keep going?"
+    }
+  ]
+}

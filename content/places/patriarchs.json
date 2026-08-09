@@ -1,0 +1,10 @@
+{
+  "slug": "patriarchs",
+  "name": "The Patriarchs",
+  "description": "The winding road of one family's story — Abraham, Isaac, Jacob, and Joseph — carrying God's promise forward a generation at a time.",
+  "mapX": 0.47,
+  "mapY": 0.68,
+  "unlockedByWaypointIds": ["patriarchs-2"],
+  "trailSlug": "patriarchs",
+  "connectsFrom": "fall"
+}

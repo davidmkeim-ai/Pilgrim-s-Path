@@ -1,0 +1,10 @@
+{
+  "slug": "spirit-and-flesh",
+  "name": "The War Within",
+  "description": "The battleground inside every believer — old desires against new life in the Spirit.",
+  "mapX": 0.58,
+  "mapY": 0.485,
+  "unlockedByWaypointIds": ["spirit-and-flesh-2"],
+  "trailSlug": "spirit-and-flesh",
+  "connectsFrom": "eden"
+}

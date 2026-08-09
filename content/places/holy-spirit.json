@@ -1,0 +1,10 @@
+{
+  "slug": "holy-spirit",
+  "name": "The Holy Spirit",
+  "description": "God living inside every believer — comforting, teaching, and empowering.",
+  "mapX": 0.51,
+  "mapY": 0.06,
+  "unlockedByWaypointIds": ["holy-spirit-2"],
+  "trailSlug": "holy-spirit",
+  "connectsFrom": "the-church"
+}

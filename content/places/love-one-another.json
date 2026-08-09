@@ -1,0 +1,10 @@
+{
+  "slug": "love-one-another",
+  "name": "Love One Another",
+  "description": "The mark of a follower of Jesus — loving each other the way he loved us.",
+  "mapX": 0.87,
+  "mapY": 0.35,
+  "unlockedByWaypointIds": ["love-one-another-2"],
+  "trailSlug": "love-one-another",
+  "connectsFrom": "peace"
+}

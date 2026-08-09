@@ -1,0 +1,10 @@
+{
+  "slug": "prayer",
+  "name": "Prayer",
+  "description": "Where God's people bring their praise, thanks, sorrow, and requests to him.",
+  "mapX": 0.18,
+  "mapY": 0.47,
+  "unlockedByWaypointIds": ["prayer-2"],
+  "trailSlug": "prayer",
+  "connectsFrom": "books-of-the-bible"
+}

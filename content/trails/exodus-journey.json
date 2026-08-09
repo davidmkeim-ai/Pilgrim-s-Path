@@ -1,0 +1,44 @@
+{
+  "slug": "exodus-journey",
+  "title": "The Journey of the Israelites",
+  "description": "God's people were slaves in Egypt for 400 years. He sent Moses to lead them out, gave them his Law, and brought them to the Promised Land.",
+  "coverImage": null,
+  "sortOrder": 4,
+  "waypoints": [
+    {
+      "id": "exodus-journey-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Out of Egypt",
+      "body": "God heard his people's cries and sent Moses to lead them out of slavery in Egypt. He parted the Red Sea so they could escape, gave them his Law at Mount Sinai, and led them through the wilderness for forty years to the Promised Land."
+    },
+    {
+      "id": "exodus-journey-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Exodus 14:14",
+      "verse": { "reference": "Exodus 14:14", "translation": "WEB" }
+    },
+    {
+      "id": "exodus-journey-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Exodus 20:2",
+      "verse": { "reference": "Exodus 20:2", "translation": "WEB" }
+    },
+    {
+      "id": "exodus-journey-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Joshua 1:9",
+      "verse": { "reference": "Joshua 1:9", "translation": "WEB" }
+    },
+    {
+      "id": "exodus-journey-5",
+      "type": "challenge",
+      "sortOrder": 5,
+      "title": "Be Strong and Courageous",
+      "body": "This week, when you feel scared or unsure about something new, remember Joshua 1:9 and say it out loud before you start."
+    }
+  ]
+}

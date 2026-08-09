@@ -1,0 +1,44 @@
+{
+  "slug": "grace",
+  "title": "Grace",
+  "description": "Grace is getting God's love and forgiveness as a free gift — not because we earned it, but because of who he is.",
+  "coverImage": null,
+  "sortOrder": 21,
+  "waypoints": [
+    {
+      "id": "grace-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "A Free Gift",
+      "body": "No one can earn their way to God -- not by being good enough, trying hard enough, or knowing enough. Salvation is a gift, freely given, received simply by trusting Jesus."
+    },
+    {
+      "id": "grace-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Ephesians 2:8-9",
+      "verse": { "reference": "Ephesians 2:8-9", "translation": "WEB" }
+    },
+    {
+      "id": "grace-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "2 Corinthians 12:9",
+      "verse": { "reference": "2 Corinthians 12:9", "translation": "WEB" }
+    },
+    {
+      "id": "grace-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Titus 2:11",
+      "verse": { "reference": "Titus 2:11", "translation": "WEB" }
+    },
+    {
+      "id": "grace-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Unearned Kindness",
+      "body": "Can you think of a time someone showed you grace -- kindness you didn't earn? How did it feel?"
+    }
+  ]
+}

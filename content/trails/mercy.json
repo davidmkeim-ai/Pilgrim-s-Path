@@ -1,0 +1,44 @@
+{
+  "slug": "mercy",
+  "title": "Mercy",
+  "description": "Mercy means not getting the punishment we deserve. Where grace gives good gifts, mercy holds back bad ones — God is rich in both.",
+  "coverImage": null,
+  "sortOrder": 22,
+  "waypoints": [
+    {
+      "id": "mercy-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Withholding What's Deserved",
+      "body": "Mercy and grace are close cousins: grace gives us good things we didn't earn, and mercy holds back bad things we did earn. God is rich in both toward everyone who comes to him."
+    },
+    {
+      "id": "mercy-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Ephesians 2:4-5",
+      "verse": { "reference": "Ephesians 2:4-5", "translation": "WEB" }
+    },
+    {
+      "id": "mercy-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Micah 6:8",
+      "verse": { "reference": "Micah 6:8", "translation": "WEB" }
+    },
+    {
+      "id": "mercy-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Matthew 5:7",
+      "verse": { "reference": "Matthew 5:7", "translation": "WEB" }
+    },
+    {
+      "id": "mercy-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Shown Mercy",
+      "body": "Tell about a time someone showed you mercy -- didn't give you the consequence you expected. What did that teach you about God?"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "psalms-highlights",
+  "name": "Highlights of Psalms",
+  "description": "Israel's songbook — 150 poems of praise, honesty, sorrow, and trust.",
+  "mapX": 0.34,
+  "mapY": 0.47,
+  "unlockedByWaypointIds": ["psalms-highlights-2"],
+  "trailSlug": "psalms-highlights",
+  "connectsFrom": "gods-word"
+}

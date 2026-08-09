@@ -1,0 +1,44 @@
+{
+  "slug": "the-church",
+  "title": "The Church",
+  "description": "The Church isn't a building — it's every person who trusts Jesus, gathered to worship, learn, encourage each other, and tell others the good news.",
+  "coverImage": null,
+  "sortOrder": 10,
+  "waypoints": [
+    {
+      "id": "the-church-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "One Family Worldwide",
+      "body": "The Church started with a small group of disciples in Jerusalem and has grown to every nation on earth. Wherever people gather to follow Jesus together, that's the Church."
+    },
+    {
+      "id": "the-church-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Matthew 16:18",
+      "verse": { "reference": "Matthew 16:18", "translation": "WEB" }
+    },
+    {
+      "id": "the-church-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Acts 2:42",
+      "verse": { "reference": "Acts 2:42", "translation": "WEB" }
+    },
+    {
+      "id": "the-church-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Hebrews 10:25",
+      "verse": { "reference": "Hebrews 10:25", "translation": "WEB" }
+    },
+    {
+      "id": "the-church-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Our Church Family",
+      "body": "What's your favorite part about being part of our church family?"
+    }
+  ]
+}

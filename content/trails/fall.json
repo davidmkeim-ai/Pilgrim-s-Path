@@ -1,0 +1,44 @@
+{
+  "slug": "fall",
+  "title": "The Fall",
+  "description": "Adam and Eve disobeyed God in the garden — and even in that moment, God promised a Rescuer would come.",
+  "coverImage": null,
+  "sortOrder": 2,
+  "waypoints": [
+    {
+      "id": "fall-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Trouble in the Garden",
+      "body": "God gave Adam and Eve one simple instruction: don't eat from one tree. A serpent twisted God's words, and they chose to disobey. Sin broke the perfect friendship between people and God — but God didn't leave them without hope."
+    },
+    {
+      "id": "fall-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Genesis 3:6",
+      "verse": { "reference": "Genesis 3:6", "translation": "WEB" }
+    },
+    {
+      "id": "fall-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Genesis 3:15",
+      "verse": { "reference": "Genesis 3:15", "translation": "WEB" }
+    },
+    {
+      "id": "fall-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Romans 3:23",
+      "verse": { "reference": "Romans 3:23", "translation": "WEB" }
+    },
+    {
+      "id": "fall-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "When You Know Better",
+      "body": "Talk about a time you knew something was wrong but did it anyway. How did it feel afterward? God still loved Adam and Eve after they disobeyed — how do you know he still loves you when you mess up?"
+    }
+  ]
+}

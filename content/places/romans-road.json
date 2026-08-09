@@ -1,0 +1,10 @@
+{
+  "slug": "romans-road",
+  "name": "Romans Road",
+  "description": "Five waymarkers through the book of Romans, tracing the path from sin to salvation.",
+  "mapX": 0.52,
+  "mapY": 0.15,
+  "unlockedByWaypointIds": ["romans-road-2"],
+  "trailSlug": "romans-road",
+  "connectsFrom": "the-trinity"
+}

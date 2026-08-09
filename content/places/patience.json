@@ -1,0 +1,10 @@
+{
+  "slug": "patience",
+  "name": "Patience",
+  "description": "Waiting well — trusting God's timing instead of rushing ahead.",
+  "mapX": 0.8,
+  "mapY": 0.4,
+  "unlockedByWaypointIds": ["patience-2"],
+  "trailSlug": "patience",
+  "connectsFrom": "endurance"
+}

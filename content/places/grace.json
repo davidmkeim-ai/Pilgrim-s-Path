@@ -1,0 +1,10 @@
+{
+  "slug": "grace",
+  "name": "Grace",
+  "description": "God's love and forgiveness given freely — not earned, but given because of who he is.",
+  "mapX": 0.9,
+  "mapY": 0.32,
+  "unlockedByWaypointIds": ["grace-2"],
+  "trailSlug": "grace",
+  "connectsFrom": "love-one-another"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "patriarchs",
+  "title": "The Patriarchs",
+  "description": "God chose one family — Abraham, Isaac, Jacob, and Joseph — to bless the whole world through.",
+  "coverImage": null,
+  "sortOrder": 3,
+  "waypoints": [
+    {
+      "id": "patriarchs-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "One Family, One Promise",
+      "body": "God called Abraham to leave his home and promised to make him into a great nation. That promise passed to his son Isaac, then his grandson Jacob (renamed Israel), and then Jacob's son Joseph, who saved his whole family from famine in Egypt."
+    },
+    {
+      "id": "patriarchs-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "Genesis 12:2",
+      "verse": { "reference": "Genesis 12:2", "translation": "WEB" }
+    },
+    {
+      "id": "patriarchs-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Genesis 15:6",
+      "verse": { "reference": "Genesis 15:6", "translation": "WEB" }
+    },
+    {
+      "id": "patriarchs-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Genesis 50:20",
+      "verse": { "reference": "Genesis 50:20", "translation": "WEB" }
+    },
+    {
+      "id": "patriarchs-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Forgiving Like Joseph",
+      "body": "Joseph forgave his brothers even though they had done something terrible to him. Is there someone you need to forgive this week?"
+    }
+  ]
+}

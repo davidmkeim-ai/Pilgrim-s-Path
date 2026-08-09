@@ -1,0 +1,17 @@
+{
+  "_readme": "Placeholder trail. The historic creeds (Apostles' Creed, Nicene Creed, etc.) haven't been added yet -- add 'creed_line' waypoints here when ready, one per line of the creed, matching the existing WaypointType. No verse waypoints yet, so this place never auto-unlocks -- that's intentional until real content exists.",
+  "slug": "creeds",
+  "title": "Creeds",
+  "description": "Historic Christian creeds — like the Apostles' Creed and the Nicene Creed — that summarize the core beliefs of the faith in a few memorized lines. Coming soon.",
+  "coverImage": null,
+  "sortOrder": 27,
+  "waypoints": [
+    {
+      "id": "creeds-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "Coming Soon",
+      "body": "This trail is a placeholder for the historic creeds of the church -- like the Apostles' Creed and the Nicene Creed. Check back as our family adds creed lines to memorize together."
+    }
+  ]
+}

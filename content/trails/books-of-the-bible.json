@@ -1,0 +1,79 @@
+{
+  "slug": "books-of-the-bible",
+  "title": "Books of the Bible",
+  "description": "The Bible is a library of 66 books written over 1,500 years, telling one true story. Knowing how the books are grouped helps you find your way around.",
+  "coverImage": null,
+  "sortOrder": 25,
+  "waypoints": [
+    {
+      "id": "books-of-the-bible-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "One Story, 66 Books",
+      "body": "The Bible isn't one book -- it's a library of 66 books, written by dozens of authors over about 1,500 years, but it tells one true story from creation to new creation."
+    },
+    {
+      "id": "books-of-the-bible-2",
+      "type": "story",
+      "sortOrder": 2,
+      "title": "The Law — Genesis to Deuteronomy",
+      "body": "The first five books, written by Moses, tell how the world and God's people began, and give God's Law."
+    },
+    {
+      "id": "books-of-the-bible-3",
+      "type": "story",
+      "sortOrder": 3,
+      "title": "History — Joshua to Esther",
+      "body": "Twelve books tracing Israel's story from entering the Promised Land through kings, exile, and return."
+    },
+    {
+      "id": "books-of-the-bible-4",
+      "type": "story",
+      "sortOrder": 4,
+      "title": "Wisdom & Poetry — Job to Song of Songs",
+      "body": "Five books of poetry and wisdom for living, including Psalms (songs) and Proverbs (wise sayings)."
+    },
+    {
+      "id": "books-of-the-bible-5",
+      "type": "story",
+      "sortOrder": 5,
+      "title": "Prophets — Isaiah to Malachi",
+      "body": "Seventeen books of prophets who called God's people back to him and pointed forward to the Messiah."
+    },
+    {
+      "id": "books-of-the-bible-6",
+      "type": "story",
+      "sortOrder": 6,
+      "title": "Gospels & Acts — Matthew to Acts",
+      "body": "Four accounts of Jesus' life, death, and resurrection, followed by the story of the early church."
+    },
+    {
+      "id": "books-of-the-bible-7",
+      "type": "story",
+      "sortOrder": 7,
+      "title": "Letters — Romans to Jude",
+      "body": "Letters written to churches and individuals, teaching how to live as followers of Jesus."
+    },
+    {
+      "id": "books-of-the-bible-8",
+      "type": "story",
+      "sortOrder": 8,
+      "title": "Revelation",
+      "body": "One book of vivid pictures about Jesus' final victory and the new heaven and earth to come."
+    },
+    {
+      "id": "books-of-the-bible-9",
+      "type": "verse",
+      "sortOrder": 9,
+      "title": "2 Timothy 3:16",
+      "verse": { "reference": "2 Timothy 3:16", "translation": "WEB" }
+    },
+    {
+      "id": "books-of-the-bible-10",
+      "type": "journal_prompt",
+      "sortOrder": 10,
+      "title": "Where to Explore Next",
+      "body": "Pick one grouping you want to explore more this month -- which one, and why?"
+    }
+  ]
+}

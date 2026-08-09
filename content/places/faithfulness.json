@@ -1,0 +1,10 @@
+{
+  "slug": "faithfulness",
+  "name": "Faithfulness",
+  "description": "Staying steady and keeping your word — one of God's own core traits, grown in us over time.",
+  "mapX": 0.72,
+  "mapY": 0.44,
+  "unlockedByWaypointIds": ["faithfulness-2"],
+  "trailSlug": "faithfulness",
+  "connectsFrom": "discipleship"
+}

@@ -5,6 +5,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Svg, { Line } from 'react-native-svg';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
@@ -73,6 +74,11 @@ export default function MapScreen() {
 
   const unlockedCount = allPlaces.filter((p) => unlockedSlugs.has(p.slug)).length;
 
+  const placesBySlug = new Map(allPlaces.map((place) => [place.slug, place]));
+  const pathEdges = allPlaces
+    .filter((place) => place.connectsFrom && placesBySlug.has(place.connectsFrom))
+    .map((place) => ({ from: placesBySlug.get(place.connectsFrom!)!, to: place }));
+
   const scale = useSharedValue(1);
   const savedScale = useSharedValue(1);
   const translateX = useSharedValue(0);
@@ -135,6 +141,36 @@ export default function MapScreen() {
           <GestureDetector gesture={composedGesture}>
             <Animated.View style={[styles.mapCanvas, animatedStyle]}>
               <Image source={BASE_MAP} style={styles.mapImage} contentFit="cover" />
+              <Svg style={styles.mapImage} viewBox="0 0 1 1" preserveAspectRatio="none">
+                {pathEdges.map((edge) => (
+                  <Line
+                    key={edge.to.slug}
+                    x1={edge.from.mapX}
+                    y1={edge.from.mapY}
+                    x2={edge.to.mapX}
+                    y2={edge.to.mapY}
+                    stroke="#3A2410"
+                    strokeOpacity={0.35}
+                    strokeWidth={5}
+                    strokeLinecap="round"
+                    vectorEffect="non-scaling-stroke"
+                  />
+                ))}
+                {pathEdges.map((edge) => (
+                  <Line
+                    key={`${edge.to.slug}-dash`}
+                    x1={edge.from.mapX}
+                    y1={edge.from.mapY}
+                    x2={edge.to.mapX}
+                    y2={edge.to.mapY}
+                    stroke="#F5E6C8"
+                    strokeWidth={2.5}
+                    strokeDasharray="1,7"
+                    strokeLinecap="round"
+                    vectorEffect="non-scaling-stroke"
+                  />
+                ))}
+              </Svg>
               {allPlaces.map((place) => (
                 <MapPin
                   key={place.slug}

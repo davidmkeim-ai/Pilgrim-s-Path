@@ -1,0 +1,10 @@
+{
+  "slug": "fall",
+  "name": "The Fall",
+  "description": "Just outside the garden — where Adam and Eve's disobedience broke the world, and God's first promise of a Rescuer was spoken.",
+  "mapX": 0.5,
+  "mapY": 0.58,
+  "unlockedByWaypointIds": ["fall-2"],
+  "trailSlug": "fall",
+  "connectsFrom": "eden"
+}

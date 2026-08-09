@@ -1,0 +1,11 @@
+{
+  "_readme": "Placeholder place for the creeds.json trail. unlockedByWaypointIds is intentionally empty (no verse waypoints exist yet in that trail), so this pin stays locked until real creed content is added.",
+  "slug": "creeds",
+  "name": "Creeds",
+  "description": "A place reserved for the historic creeds of the church — coming soon.",
+  "mapX": 0.1,
+  "mapY": 0.47,
+  "unlockedByWaypointIds": [],
+  "trailSlug": "creeds",
+  "connectsFrom": "prayer"
+}

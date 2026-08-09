@@ -1,0 +1,44 @@
+{
+  "slug": "holy-spirit",
+  "title": "The Holy Spirit",
+  "description": "The Holy Spirit is God himself, sent to live inside every believer — to comfort, teach, empower, and change us from the inside out.",
+  "coverImage": null,
+  "sortOrder": 11,
+  "waypoints": [
+    {
+      "id": "holy-spirit-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "God Living Inside",
+      "body": "Before Jesus returned to heaven, he promised his followers wouldn't be left alone -- he would send the Holy Spirit to be with them forever, teaching, comforting, and giving them power to live for him."
+    },
+    {
+      "id": "holy-spirit-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "John 14:26",
+      "verse": { "reference": "John 14:26", "translation": "WEB" }
+    },
+    {
+      "id": "holy-spirit-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "Acts 1:8",
+      "verse": { "reference": "Acts 1:8", "translation": "WEB" }
+    },
+    {
+      "id": "holy-spirit-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "Galatians 5:22-23",
+      "verse": { "reference": "Galatians 5:22-23", "translation": "WEB" }
+    },
+    {
+      "id": "holy-spirit-5",
+      "type": "journal_prompt",
+      "sortOrder": 5,
+      "title": "Growing Fruit",
+      "body": "Which 'fruit of the Spirit' (love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control) do you most want God to grow in you this year?"
+    }
+  ]
+}

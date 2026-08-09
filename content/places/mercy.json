@@ -1,0 +1,10 @@
+{
+  "slug": "mercy",
+  "name": "Mercy",
+  "description": "Where the deserved punishment is held back — God's rich mercy toward everyone who comes to him.",
+  "mapX": 0.93,
+  "mapY": 0.29,
+  "unlockedByWaypointIds": ["mercy-2"],
+  "trailSlug": "mercy",
+  "connectsFrom": "grace"
+}

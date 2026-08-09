@@ -1,0 +1,44 @@
+{
+  "slug": "love-one-another",
+  "title": "Love One Another",
+  "description": "Jesus said the whole world would know we belong to him by one thing: how we love each other.",
+  "coverImage": null,
+  "sortOrder": 20,
+  "waypoints": [
+    {
+      "id": "love-one-another-1",
+      "type": "story",
+      "sortOrder": 1,
+      "title": "The Mark of a Follower",
+      "body": "The night before he died, Jesus gave his followers a new command: love each other the way he had loved them. He said that love -- not perfect knowledge or performance -- would be the sign to the world that they belonged to him."
+    },
+    {
+      "id": "love-one-another-2",
+      "type": "verse",
+      "sortOrder": 2,
+      "title": "John 13:34-35",
+      "verse": { "reference": "John 13:34-35", "translation": "WEB" }
+    },
+    {
+      "id": "love-one-another-3",
+      "type": "verse",
+      "sortOrder": 3,
+      "title": "1 Corinthians 13:4",
+      "verse": { "reference": "1 Corinthians 13:4", "translation": "WEB" }
+    },
+    {
+      "id": "love-one-another-4",
+      "type": "verse",
+      "sortOrder": 4,
+      "title": "1 John 4:19",
+      "verse": { "reference": "1 John 4:19", "translation": "WEB" }
+    },
+    {
+      "id": "love-one-another-5",
+      "type": "challenge",
+      "sortOrder": 5,
+      "title": "An Act of Love",
+      "body": "Do one specific act of love for a family member this week without being asked -- then write about it in the journal."
+    }
+  ]
+}

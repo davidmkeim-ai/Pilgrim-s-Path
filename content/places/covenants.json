@@ -1,0 +1,10 @@
+{
+  "slug": "covenants",
+  "name": "The Covenants",
+  "description": "Four milestones of God's binding promises — to Abraham, through Moses, to David, and sealed by Jesus.",
+  "mapX": 0.53,
+  "mapY": 0.28,
+  "unlockedByWaypointIds": ["covenants-2"],
+  "trailSlug": "covenants",
+  "connectsFrom": "messianic-prophecy"
+}

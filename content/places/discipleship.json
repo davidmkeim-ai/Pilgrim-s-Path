@@ -1,0 +1,10 @@
+{
+  "slug": "discipleship",
+  "name": "Discipleship",
+  "description": "The road every follower of Jesus walks — learning his whole way of life, not just his words.",
+  "mapX": 0.68,
+  "mapY": 0.455,
+  "unlockedByWaypointIds": ["discipleship-2"],
+  "trailSlug": "discipleship",
+  "connectsFrom": "obedience"
+}

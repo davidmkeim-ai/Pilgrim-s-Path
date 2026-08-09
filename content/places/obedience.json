@@ -1,0 +1,10 @@
+{
+  "slug": "obedience",
+  "name": "Obedience",
+  "description": "Loving God in action — doing what he asks, the first time, with a willing heart.",
+  "mapX": 0.63,
+  "mapY": 0.47,
+  "unlockedByWaypointIds": ["obedience-2"],
+  "trailSlug": "obedience",
+  "connectsFrom": "spirit-and-flesh"
+}

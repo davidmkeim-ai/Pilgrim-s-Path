@@ -1,0 +1,10 @@
+{
+  "slug": "gods-word",
+  "name": "God's Word",
+  "description": "A lamp for the feet and a light for the path — Psalm 119's tribute to Scripture.",
+  "mapX": 0.42,
+  "mapY": 0.47,
+  "unlockedByWaypointIds": ["gods-word-2"],
+  "trailSlug": "gods-word",
+  "connectsFrom": "eden"
+}
