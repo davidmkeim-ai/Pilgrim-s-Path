@@ -23,20 +23,34 @@
       "id": "sin-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "Romans 6:23",
-      "verse": { "reference": "Romans 6:23", "translation": "WEB" }
+      "title": "Isaiah 59:2",
+      "verse": { "reference": "Isaiah 59:2", "translation": "WEB" }
     },
     {
       "id": "sin-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "Romans 6:23",
+      "verse": { "reference": "Romans 6:23", "translation": "WEB" }
+    },
+    {
+      "id": "sin-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "Psalm 51:10",
+      "verse": { "reference": "Psalm 51:10", "translation": "WEB" }
+    },
+    {
+      "id": "sin-6",
+      "type": "verse",
+      "sortOrder": 6,
       "title": "1 John 1:9",
       "verse": { "reference": "1 John 1:9", "translation": "WEB" }
     },
     {
-      "id": "sin-5",
+      "id": "sin-7",
       "type": "journal_prompt",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "Honest with God",
       "body": "Is there something you've been afraid to admit to God or a parent? 1 John 1:9 promises that confessing it brings forgiveness, not punishment. Talk about why that's good news."
     }

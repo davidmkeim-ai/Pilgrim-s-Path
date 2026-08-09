@@ -23,8 +23,8 @@
       "id": "patience-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "Psalm 27:14",
-      "verse": { "reference": "Psalm 27:14", "translation": "WEB" }
+      "title": "Proverbs 14:29",
+      "verse": { "reference": "Proverbs 14:29", "translation": "WEB" }
     },
     {
       "id": "patience-4",
@@ -35,8 +35,22 @@
     },
     {
       "id": "patience-5",
-      "type": "journal_prompt",
+      "type": "verse",
       "sortOrder": 5,
+      "title": "Romans 12:12",
+      "verse": { "reference": "Romans 12:12", "translation": "WEB" }
+    },
+    {
+      "id": "patience-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "Psalm 27:14",
+      "verse": { "reference": "Psalm 27:14", "translation": "WEB" }
+    },
+    {
+      "id": "patience-7",
+      "type": "journal_prompt",
+      "sortOrder": 7,
       "title": "Waiting for Something",
       "body": "Tell about a time you had to wait for something. Was it hard to be patient? What helped?"
     }

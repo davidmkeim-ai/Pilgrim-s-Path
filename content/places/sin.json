@@ -6,5 +6,6 @@
   "mapY": 0.42,
   "unlockedByWaypointIds": ["sin-2"],
   "trailSlug": "sin",
-  "connectsFrom": "eden"
+  "connectsFrom": "eden",
+  "crossLinks": ["spirit-and-flesh"]
 }

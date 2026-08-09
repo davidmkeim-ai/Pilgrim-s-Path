@@ -16,27 +16,41 @@
       "id": "the-trinity-2",
       "type": "verse",
       "sortOrder": 2,
-      "title": "Matthew 28:19",
-      "verse": { "reference": "Matthew 28:19", "translation": "WEB" }
+      "title": "Genesis 1:26",
+      "verse": { "reference": "Genesis 1:26", "translation": "WEB" }
     },
     {
       "id": "the-trinity-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "2 Corinthians 13:14",
-      "verse": { "reference": "2 Corinthians 13:14", "translation": "WEB" }
+      "title": "John 1:1",
+      "verse": { "reference": "John 1:1", "translation": "WEB" }
     },
     {
       "id": "the-trinity-4",
       "type": "verse",
       "sortOrder": 4,
-      "title": "Genesis 1:26",
-      "verse": { "reference": "Genesis 1:26", "translation": "WEB" }
+      "title": "Matthew 28:19",
+      "verse": { "reference": "Matthew 28:19", "translation": "WEB" }
     },
     {
       "id": "the-trinity-5",
-      "type": "challenge",
+      "type": "verse",
       "sortOrder": 5,
+      "title": "Luke 3:22",
+      "verse": { "reference": "Luke 3:22", "translation": "WEB" }
+    },
+    {
+      "id": "the-trinity-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "2 Corinthians 13:14",
+      "verse": { "reference": "2 Corinthians 13:14", "translation": "WEB" }
+    },
+    {
+      "id": "the-trinity-7",
+      "type": "challenge",
+      "sortOrder": 7,
       "title": "Spot the Three",
       "body": "This week, notice one thing the Father does, one thing Jesus does, and one thing the Holy Spirit does in the Bible stories you hear, and talk about it as a family."
     }

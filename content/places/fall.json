@@ -6,5 +6,6 @@
   "mapY": 0.58,
   "unlockedByWaypointIds": ["fall-2"],
   "trailSlug": "fall",
-  "connectsFrom": "eden"
+  "connectsFrom": "eden",
+  "crossLinks": ["sin"]
 }

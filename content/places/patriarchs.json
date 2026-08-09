@@ -6,5 +6,6 @@
   "mapY": 0.68,
   "unlockedByWaypointIds": ["patriarchs-2"],
   "trailSlug": "patriarchs",
-  "connectsFrom": "fall"
+  "connectsFrom": "fall",
+  "crossLinks": ["covenants"]
 }

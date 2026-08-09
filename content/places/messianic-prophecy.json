@@ -6,5 +6,6 @@
   "mapY": 0.35,
   "unlockedByWaypointIds": ["messianic-prophecy-2"],
   "trailSlug": "messianic-prophecy",
-  "connectsFrom": "sin"
+  "connectsFrom": "sin",
+  "crossLinks": ["the-trinity"]
 }

@@ -16,27 +16,41 @@
       "id": "faithfulness-2",
       "type": "verse",
       "sortOrder": 2,
-      "title": "Lamentations 3:22-23",
-      "verse": { "reference": "Lamentations 3:22-23", "translation": "WEB" }
+      "title": "Deuteronomy 7:9",
+      "verse": { "reference": "Deuteronomy 7:9", "translation": "WEB" }
     },
     {
       "id": "faithfulness-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "1 Corinthians 4:2",
-      "verse": { "reference": "1 Corinthians 4:2", "translation": "WEB" }
+      "title": "Numbers 23:19",
+      "verse": { "reference": "Numbers 23:19", "translation": "WEB" }
     },
     {
       "id": "faithfulness-4",
       "type": "verse",
       "sortOrder": 4,
-      "title": "Deuteronomy 7:9",
-      "verse": { "reference": "Deuteronomy 7:9", "translation": "WEB" }
+      "title": "Lamentations 3:22-23",
+      "verse": { "reference": "Lamentations 3:22-23", "translation": "WEB" }
     },
     {
       "id": "faithfulness-5",
-      "type": "journal_prompt",
+      "type": "verse",
       "sortOrder": 5,
+      "title": "Hebrews 10:23",
+      "verse": { "reference": "Hebrews 10:23", "translation": "WEB" }
+    },
+    {
+      "id": "faithfulness-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "1 Corinthians 4:2",
+      "verse": { "reference": "1 Corinthians 4:2", "translation": "WEB" }
+    },
+    {
+      "id": "faithfulness-7",
+      "type": "journal_prompt",
+      "sortOrder": 7,
       "title": "Someone Faithful",
       "body": "Who is someone faithful in your life -- who always keeps their promises? Thank them this week."
     }

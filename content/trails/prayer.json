@@ -30,13 +30,27 @@
       "id": "prayer-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "James 5:16",
+      "verse": { "reference": "James 5:16", "translation": "WEB" }
+    },
+    {
+      "id": "prayer-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "1 John 5:14",
+      "verse": { "reference": "1 John 5:14", "translation": "WEB" }
+    },
+    {
+      "id": "prayer-6",
+      "type": "verse",
+      "sortOrder": 6,
       "title": "1 Thessalonians 5:17",
       "verse": { "reference": "1 Thessalonians 5:17", "translation": "WEB" }
     },
     {
-      "id": "prayer-5",
+      "id": "prayer-7",
       "type": "challenge",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "One Sentence Each",
       "body": "As a family, take turns each praying one sentence out loud tonight -- one thank you, one sorry, one please."
     }

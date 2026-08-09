@@ -78,6 +78,11 @@ export default function MapScreen() {
   const pathEdges = allPlaces
     .filter((place) => place.connectsFrom && placesBySlug.has(place.connectsFrom))
     .map((place) => ({ from: placesBySlug.get(place.connectsFrom!)!, to: place }));
+  const crossLinkEdges = allPlaces.flatMap((place) =>
+    (place.crossLinks ?? [])
+      .filter((slug) => placesBySlug.has(slug))
+      .map((slug) => ({ from: place, to: placesBySlug.get(slug)! }))
+  );
 
   const scale = useSharedValue(1);
   const savedScale = useSharedValue(1);
@@ -85,14 +90,47 @@ export default function MapScreen() {
   const translateY = useSharedValue(0);
   const savedTranslateX = useSharedValue(0);
   const savedTranslateY = useSharedValue(0);
+  const viewportWidth = useSharedValue(0);
+  const viewportHeight = useSharedValue(0);
+  // Content-local point (in the untransformed map canvas's own coordinate space) that was
+  // under the pinch focal point when the gesture started -- recomputed each update so the
+  // spot under the fingers stays glued in place as scale changes, instead of zooming toward
+  // the canvas center regardless of where the user pinched.
+  const focalPointLocal = useSharedValue({ x: 0, y: 0 });
+
+  const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
+
+  const clampTranslate = (nextScale: number) => {
+    'worklet';
+    const maxTranslateX = Math.max(0, (viewportWidth.value * (nextScale - 1)) / 2);
+    const maxTranslateY = Math.max(0, (viewportHeight.value * (nextScale - 1)) / 2);
+    translateX.value = clamp(translateX.value, -maxTranslateX, maxTranslateX);
+    translateY.value = clamp(translateY.value, -maxTranslateY, maxTranslateY);
+  };
 
   const pinchGesture = Gesture.Pinch()
+    .onStart((e) => {
+      const originX = viewportWidth.value / 2;
+      const originY = viewportHeight.value / 2;
+      focalPointLocal.value = {
+        x: (e.focalX - originX) / scale.value - translateX.value + originX,
+        y: (e.focalY - originY) / scale.value - translateY.value + originY,
+      };
+    })
     .onUpdate((e) => {
-      const next = savedScale.value * e.scale;
-      scale.value = Math.min(Math.max(next, MIN_SCALE), MAX_SCALE);
+      if (viewportWidth.value === 0) return;
+      const nextScale = clamp(savedScale.value * e.scale, MIN_SCALE, MAX_SCALE);
+      const originX = viewportWidth.value / 2;
+      const originY = viewportHeight.value / 2;
+      translateX.value = (e.focalX - originX) / nextScale - focalPointLocal.value.x + originX;
+      translateY.value = (e.focalY - originY) / nextScale - focalPointLocal.value.y + originY;
+      scale.value = nextScale;
+      clampTranslate(nextScale);
     })
     .onEnd(() => {
       savedScale.value = scale.value;
+      savedTranslateX.value = translateX.value;
+      savedTranslateY.value = translateY.value;
     });
 
   const panGesture = Gesture.Pan()
@@ -100,6 +138,7 @@ export default function MapScreen() {
     .onUpdate((e) => {
       translateX.value = savedTranslateX.value + e.translationX;
       translateY.value = savedTranslateY.value + e.translationY;
+      clampTranslate(scale.value);
     })
     .onEnd(() => {
       savedTranslateX.value = translateX.value;
@@ -137,49 +176,73 @@ export default function MapScreen() {
           </ThemedText>
         </View>
 
-        <View style={[styles.viewport, { backgroundColor: theme.backgroundElement }]}>
+        <View
+          style={[styles.viewport, { backgroundColor: theme.backgroundElement }]}
+          onLayout={(e) => {
+            viewportWidth.value = e.nativeEvent.layout.width;
+            viewportHeight.value = e.nativeEvent.layout.height;
+          }}>
           <GestureDetector gesture={composedGesture}>
-            <Animated.View style={[styles.mapCanvas, animatedStyle]}>
-              <Image source={BASE_MAP} style={styles.mapImage} contentFit="cover" />
-              <Svg style={styles.mapImage} viewBox="0 0 1 1" preserveAspectRatio="none">
-                {pathEdges.map((edge) => (
-                  <Line
-                    key={edge.to.slug}
-                    x1={edge.from.mapX}
-                    y1={edge.from.mapY}
-                    x2={edge.to.mapX}
-                    y2={edge.to.mapY}
-                    stroke="#3A2410"
-                    strokeOpacity={0.35}
-                    strokeWidth={5}
-                    strokeLinecap="round"
-                    vectorEffect="non-scaling-stroke"
+            {/* This wrapper stays untransformed so gesture focal points are measured in stable
+                coordinates -- only the Animated.View inside it actually pans/zooms. */}
+            <View style={styles.gestureLayer} collapsable={false}>
+              <Animated.View style={[styles.mapCanvas, animatedStyle]}>
+                <Image source={BASE_MAP} style={styles.mapImage} contentFit="cover" />
+                <Svg style={styles.mapImage} viewBox="0 0 1 1" preserveAspectRatio="none">
+                  {pathEdges.map((edge) => (
+                    <Line
+                      key={edge.to.slug}
+                      x1={edge.from.mapX}
+                      y1={edge.from.mapY}
+                      x2={edge.to.mapX}
+                      y2={edge.to.mapY}
+                      stroke="#3A2410"
+                      strokeOpacity={0.35}
+                      strokeWidth={5}
+                      strokeLinecap="round"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  ))}
+                  {pathEdges.map((edge) => (
+                    <Line
+                      key={`${edge.to.slug}-dash`}
+                      x1={edge.from.mapX}
+                      y1={edge.from.mapY}
+                      x2={edge.to.mapX}
+                      y2={edge.to.mapY}
+                      stroke="#F5E6C8"
+                      strokeWidth={2.5}
+                      strokeDasharray="1,7"
+                      strokeLinecap="round"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  ))}
+                  {crossLinkEdges.map((edge) => (
+                    <Line
+                      key={`${edge.from.slug}-${edge.to.slug}-cross`}
+                      x1={edge.from.mapX}
+                      y1={edge.from.mapY}
+                      x2={edge.to.mapX}
+                      y2={edge.to.mapY}
+                      stroke="#E8DAB0"
+                      strokeOpacity={0.55}
+                      strokeWidth={1.5}
+                      strokeDasharray="1,5"
+                      strokeLinecap="round"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  ))}
+                </Svg>
+                {allPlaces.map((place) => (
+                  <MapPin
+                    key={place.slug}
+                    place={place}
+                    unlocked={unlockedSlugs.has(place.slug)}
+                    onOpen={() => openTrail(place)}
                   />
                 ))}
-                {pathEdges.map((edge) => (
-                  <Line
-                    key={`${edge.to.slug}-dash`}
-                    x1={edge.from.mapX}
-                    y1={edge.from.mapY}
-                    x2={edge.to.mapX}
-                    y2={edge.to.mapY}
-                    stroke="#F5E6C8"
-                    strokeWidth={2.5}
-                    strokeDasharray="1,7"
-                    strokeLinecap="round"
-                    vectorEffect="non-scaling-stroke"
-                  />
-                ))}
-              </Svg>
-              {allPlaces.map((place) => (
-                <MapPin
-                  key={place.slug}
-                  place={place}
-                  unlocked={unlockedSlugs.has(place.slug)}
-                  onOpen={() => openTrail(place)}
-                />
-              ))}
-            </Animated.View>
+              </Animated.View>
+            </View>
           </GestureDetector>
           {allPlaces.length === 0 && (
             <ThemedText type="small" themeColor="textSecondary" style={styles.emptyText}>
@@ -207,6 +270,7 @@ const styles = StyleSheet.create({
     borderRadius: Spacing.three,
     overflow: 'hidden',
   },
+  gestureLayer: { flex: 1 },
   mapCanvas: { flex: 1 },
   mapImage: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
   emptyText: {

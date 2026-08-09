@@ -23,20 +23,34 @@
       "id": "heaven-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "1 Corinthians 15:20",
-      "verse": { "reference": "1 Corinthians 15:20", "translation": "WEB" }
+      "title": "John 14:2-3",
+      "verse": { "reference": "John 14:2-3", "translation": "WEB" }
     },
     {
       "id": "heaven-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "1 Corinthians 15:20",
+      "verse": { "reference": "1 Corinthians 15:20", "translation": "WEB" }
+    },
+    {
+      "id": "heaven-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "1 Thessalonians 4:16",
+      "verse": { "reference": "1 Thessalonians 4:16", "translation": "WEB" }
+    },
+    {
+      "id": "heaven-6",
+      "type": "verse",
+      "sortOrder": 6,
       "title": "Revelation 21:4",
       "verse": { "reference": "Revelation 21:4", "translation": "WEB" }
     },
     {
-      "id": "heaven-5",
+      "id": "heaven-7",
       "type": "journal_prompt",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "Looking Forward",
       "body": "What are you most looking forward to about heaven?"
     }

@@ -16,15 +16,15 @@
       "id": "endurance-2",
       "type": "verse",
       "sortOrder": 2,
-      "title": "Philippians 1:6",
-      "verse": { "reference": "Philippians 1:6", "translation": "WEB" }
+      "title": "James 1:2-3",
+      "verse": { "reference": "James 1:2-3", "translation": "WEB" }
     },
     {
       "id": "endurance-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "James 1:2-3",
-      "verse": { "reference": "James 1:2-3", "translation": "WEB" }
+      "title": "Romans 5:3-4",
+      "verse": { "reference": "Romans 5:3-4", "translation": "WEB" }
     },
     {
       "id": "endurance-4",
@@ -35,8 +35,22 @@
     },
     {
       "id": "endurance-5",
-      "type": "journal_prompt",
+      "type": "verse",
       "sortOrder": 5,
+      "title": "Galatians 6:9",
+      "verse": { "reference": "Galatians 6:9", "translation": "WEB" }
+    },
+    {
+      "id": "endurance-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "Philippians 1:6",
+      "verse": { "reference": "Philippians 1:6", "translation": "WEB" }
+    },
+    {
+      "id": "endurance-7",
+      "type": "journal_prompt",
+      "sortOrder": 7,
       "title": "Kept Going",
       "body": "What's something hard you kept trying at even when you wanted to quit? How did God help you keep going?"
     }

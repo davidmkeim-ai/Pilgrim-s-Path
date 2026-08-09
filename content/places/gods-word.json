@@ -6,5 +6,6 @@
   "mapY": 0.47,
   "unlockedByWaypointIds": ["gods-word-2"],
   "trailSlug": "gods-word",
-  "connectsFrom": "eden"
+  "connectsFrom": "eden",
+  "crossLinks": ["prayer"]
 }

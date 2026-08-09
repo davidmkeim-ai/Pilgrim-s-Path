@@ -6,5 +6,6 @@
   "mapY": 0.15,
   "unlockedByWaypointIds": ["romans-road-2"],
   "trailSlug": "romans-road",
-  "connectsFrom": "the-trinity"
+  "connectsFrom": "the-trinity",
+  "crossLinks": ["spirit-and-flesh"]
 }

@@ -30,13 +30,27 @@
       "id": "patriarchs-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "Genesis 17:5",
+      "verse": { "reference": "Genesis 17:5", "translation": "WEB" }
+    },
+    {
+      "id": "patriarchs-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "Genesis 28:15",
+      "verse": { "reference": "Genesis 28:15", "translation": "WEB" }
+    },
+    {
+      "id": "patriarchs-6",
+      "type": "verse",
+      "sortOrder": 6,
       "title": "Genesis 50:20",
       "verse": { "reference": "Genesis 50:20", "translation": "WEB" }
     },
     {
-      "id": "patriarchs-5",
+      "id": "patriarchs-7",
       "type": "journal_prompt",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "Forgiving Like Joseph",
       "body": "Joseph forgave his brothers even though they had done something terrible to him. Is there someone you need to forgive this week?"
     }

@@ -6,5 +6,6 @@
   "mapY": 0.06,
   "unlockedByWaypointIds": ["holy-spirit-2"],
   "trailSlug": "holy-spirit",
-  "connectsFrom": "the-church"
+  "connectsFrom": "the-church",
+  "crossLinks": ["spirit-and-flesh"]
 }

@@ -6,5 +6,6 @@
   "mapY": 0.35,
   "unlockedByWaypointIds": ["love-one-another-2"],
   "trailSlug": "love-one-another",
-  "connectsFrom": "peace"
+  "connectsFrom": "peace",
+  "crossLinks": ["the-church"]
 }

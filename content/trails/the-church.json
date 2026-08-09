@@ -30,13 +30,27 @@
       "id": "the-church-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "1 Corinthians 12:27",
+      "verse": { "reference": "1 Corinthians 12:27", "translation": "WEB" }
+    },
+    {
+      "id": "the-church-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "1 Peter 2:9",
+      "verse": { "reference": "1 Peter 2:9", "translation": "WEB" }
+    },
+    {
+      "id": "the-church-6",
+      "type": "verse",
+      "sortOrder": 6,
       "title": "Hebrews 10:25",
       "verse": { "reference": "Hebrews 10:25", "translation": "WEB" }
     },
     {
-      "id": "the-church-5",
+      "id": "the-church-7",
       "type": "journal_prompt",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "Our Church Family",
       "body": "What's your favorite part about being part of our church family?"
     }

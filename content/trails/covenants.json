@@ -37,13 +37,20 @@
       "id": "covenants-5",
       "type": "verse",
       "sortOrder": 5,
-      "title": "The New Covenant — Luke 22:20",
-      "verse": { "reference": "Luke 22:20", "translation": "WEB" }
+      "title": "The New Covenant Promised — Jeremiah 31:31",
+      "verse": { "reference": "Jeremiah 31:31", "translation": "WEB" }
     },
     {
       "id": "covenants-6",
-      "type": "journal_prompt",
+      "type": "verse",
       "sortOrder": 6,
+      "title": "The New Covenant Sealed — Luke 22:20",
+      "verse": { "reference": "Luke 22:20", "translation": "WEB" }
+    },
+    {
+      "id": "covenants-7",
+      "type": "journal_prompt",
+      "sortOrder": 7,
       "title": "Which Promise?",
       "body": "Which of God's four promises means the most to you right now, and why?"
     }

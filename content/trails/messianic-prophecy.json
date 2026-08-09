@@ -23,8 +23,8 @@
       "id": "messianic-prophecy-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "Isaiah 53:5",
-      "verse": { "reference": "Isaiah 53:5", "translation": "WEB" }
+      "title": "Isaiah 7:14",
+      "verse": { "reference": "Isaiah 7:14", "translation": "WEB" }
     },
     {
       "id": "messianic-prophecy-4",
@@ -35,8 +35,22 @@
     },
     {
       "id": "messianic-prophecy-5",
-      "type": "challenge",
+      "type": "verse",
       "sortOrder": 5,
+      "title": "Isaiah 53:5",
+      "verse": { "reference": "Isaiah 53:5", "translation": "WEB" }
+    },
+    {
+      "id": "messianic-prophecy-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "Zechariah 9:9",
+      "verse": { "reference": "Zechariah 9:9", "translation": "WEB" }
+    },
+    {
+      "id": "messianic-prophecy-7",
+      "type": "challenge",
+      "sortOrder": 7,
       "title": "Promise and Fulfillment",
       "body": "Look up one Old Testament prophecy about Jesus and one New Testament verse that shows it came true. Share what you found at dinner."
     }

@@ -16,8 +16,8 @@
       "id": "gods-word-2",
       "type": "verse",
       "sortOrder": 2,
-      "title": "Psalm 119:105",
-      "verse": { "reference": "Psalm 119:105", "translation": "WEB" }
+      "title": "Psalm 119:9",
+      "verse": { "reference": "Psalm 119:9", "translation": "WEB" }
     },
     {
       "id": "gods-word-3",
@@ -30,13 +30,27 @@
       "id": "gods-word-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "Psalm 119:105",
+      "verse": { "reference": "Psalm 119:105", "translation": "WEB" }
+    },
+    {
+      "id": "gods-word-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "Hebrews 4:12",
+      "verse": { "reference": "Hebrews 4:12", "translation": "WEB" }
+    },
+    {
+      "id": "gods-word-6",
+      "type": "verse",
+      "sortOrder": 6,
       "title": "2 Timothy 3:16-17",
       "verse": { "reference": "2 Timothy 3:16-17", "translation": "WEB" }
     },
     {
-      "id": "gods-word-5",
+      "id": "gods-word-7",
       "type": "journal_prompt",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "A Verse That Guided You",
       "body": "What's one verse that has helped guide a decision you made? If you can't think of one yet, that's okay -- keep hiding God's word in your heart."
     }

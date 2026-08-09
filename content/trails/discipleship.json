@@ -23,20 +23,34 @@
       "id": "discipleship-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "Luke 9:23",
-      "verse": { "reference": "Luke 9:23", "translation": "WEB" }
+      "title": "John 8:31",
+      "verse": { "reference": "John 8:31", "translation": "WEB" }
     },
     {
       "id": "discipleship-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "Luke 9:23",
+      "verse": { "reference": "Luke 9:23", "translation": "WEB" }
+    },
+    {
+      "id": "discipleship-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "2 Timothy 2:2",
+      "verse": { "reference": "2 Timothy 2:2", "translation": "WEB" }
+    },
+    {
+      "id": "discipleship-6",
+      "type": "verse",
+      "sortOrder": 6,
       "title": "Matthew 28:19-20",
       "verse": { "reference": "Matthew 28:19-20", "translation": "WEB" }
     },
     {
-      "id": "discipleship-5",
+      "id": "discipleship-7",
       "type": "journal_prompt",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "Everyday Following",
       "body": "What does 'following Jesus' look like in your everyday life -- at school, with friends, at home?"
     }

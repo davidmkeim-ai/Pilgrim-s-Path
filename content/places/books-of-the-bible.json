@@ -6,5 +6,6 @@
   "mapY": 0.47,
   "unlockedByWaypointIds": ["books-of-the-bible-9"],
   "trailSlug": "books-of-the-bible",
-  "connectsFrom": "psalms-highlights"
+  "connectsFrom": "psalms-highlights",
+  "crossLinks": ["messianic-prophecy"]
 }

@@ -16,15 +16,15 @@
       "id": "peace-2",
       "type": "verse",
       "sortOrder": 2,
-      "title": "John 14:27",
-      "verse": { "reference": "John 14:27", "translation": "WEB" }
+      "title": "Romans 5:1",
+      "verse": { "reference": "Romans 5:1", "translation": "WEB" }
     },
     {
       "id": "peace-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "Philippians 4:7",
-      "verse": { "reference": "Philippians 4:7", "translation": "WEB" }
+      "title": "John 14:27",
+      "verse": { "reference": "John 14:27", "translation": "WEB" }
     },
     {
       "id": "peace-4",
@@ -35,8 +35,22 @@
     },
     {
       "id": "peace-5",
-      "type": "journal_prompt",
+      "type": "verse",
       "sortOrder": 5,
+      "title": "Colossians 3:15",
+      "verse": { "reference": "Colossians 3:15", "translation": "WEB" }
+    },
+    {
+      "id": "peace-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "Philippians 4:7",
+      "verse": { "reference": "Philippians 4:7", "translation": "WEB" }
+    },
+    {
+      "id": "peace-7",
+      "type": "journal_prompt",
+      "sortOrder": 7,
       "title": "What Helps You Feel Calm",
       "body": "What helps you feel calm and peaceful when you're worried?"
     }

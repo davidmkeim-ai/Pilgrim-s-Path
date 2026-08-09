@@ -6,5 +6,6 @@
   "mapY": 0.455,
   "unlockedByWaypointIds": ["discipleship-2"],
   "trailSlug": "discipleship",
-  "connectsFrom": "obedience"
+  "connectsFrom": "obedience",
+  "crossLinks": ["prayer"]
 }

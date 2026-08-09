@@ -6,5 +6,6 @@
   "mapY": 0.28,
   "unlockedByWaypointIds": ["covenants-2"],
   "trailSlug": "covenants",
-  "connectsFrom": "messianic-prophecy"
+  "connectsFrom": "messianic-prophecy",
+  "crossLinks": ["the-church"]
 }

@@ -6,5 +6,6 @@
   "mapY": 0.8,
   "unlockedByWaypointIds": ["exodus-journey-2"],
   "trailSlug": "exodus-journey",
-  "connectsFrom": "patriarchs"
+  "connectsFrom": "patriarchs",
+  "crossLinks": ["covenants"]
 }

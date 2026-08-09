@@ -16,27 +16,41 @@
       "id": "grace-2",
       "type": "verse",
       "sortOrder": 2,
-      "title": "Ephesians 2:8-9",
-      "verse": { "reference": "Ephesians 2:8-9", "translation": "WEB" }
+      "title": "John 1:16",
+      "verse": { "reference": "John 1:16", "translation": "WEB" }
     },
     {
       "id": "grace-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "2 Corinthians 12:9",
-      "verse": { "reference": "2 Corinthians 12:9", "translation": "WEB" }
+      "title": "Ephesians 2:8-9",
+      "verse": { "reference": "Ephesians 2:8-9", "translation": "WEB" }
     },
     {
       "id": "grace-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "Romans 5:20",
+      "verse": { "reference": "Romans 5:20", "translation": "WEB" }
+    },
+    {
+      "id": "grace-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "2 Corinthians 12:9",
+      "verse": { "reference": "2 Corinthians 12:9", "translation": "WEB" }
+    },
+    {
+      "id": "grace-6",
+      "type": "verse",
+      "sortOrder": 6,
       "title": "Titus 2:11",
       "verse": { "reference": "Titus 2:11", "translation": "WEB" }
     },
     {
-      "id": "grace-5",
+      "id": "grace-7",
       "type": "journal_prompt",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "Unearned Kindness",
       "body": "Can you think of a time someone showed you grace -- kindness you didn't earn? How did it feel?"
     }

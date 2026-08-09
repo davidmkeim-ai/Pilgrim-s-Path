@@ -35,22 +35,29 @@
     },
     {
       "id": "creation-and-covenant-5",
-      "type": "journal_prompt",
+      "type": "verse",
       "sortOrder": 5,
+      "title": "Genesis 2:7",
+      "verse": { "reference": "Genesis 2:7", "translation": "WEB" }
+    },
+    {
+      "id": "creation-and-covenant-6",
+      "type": "journal_prompt",
+      "sortOrder": 6,
       "title": "Made in His Image",
       "body": "Draw or write about your favorite part of creation. Why do you think God made people different from the animals and plants?"
     },
     {
-      "id": "creation-and-covenant-6",
+      "id": "creation-and-covenant-7",
       "type": "verse",
-      "sortOrder": 6,
+      "sortOrder": 7,
       "title": "Genesis 9:13",
       "verse": { "reference": "Genesis 9:13", "translation": "WEB" }
     },
     {
-      "id": "creation-and-covenant-7",
+      "id": "creation-and-covenant-8",
       "type": "challenge",
-      "sortOrder": 7,
+      "sortOrder": 8,
       "title": "Spot the Creator",
       "body": "This week, find something in nature that reminds you God is the Creator, and tell a family member about it. Write what you found in the journal."
     }

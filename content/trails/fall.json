@@ -23,20 +23,34 @@
       "id": "fall-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "Genesis 3:15",
-      "verse": { "reference": "Genesis 3:15", "translation": "WEB" }
+      "title": "Genesis 3:9",
+      "verse": { "reference": "Genesis 3:9", "translation": "WEB" }
     },
     {
       "id": "fall-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "Genesis 3:15",
+      "verse": { "reference": "Genesis 3:15", "translation": "WEB" }
+    },
+    {
+      "id": "fall-5",
+      "type": "verse",
+      "sortOrder": 5,
       "title": "Romans 3:23",
       "verse": { "reference": "Romans 3:23", "translation": "WEB" }
     },
     {
-      "id": "fall-5",
+      "id": "fall-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "Romans 5:12",
+      "verse": { "reference": "Romans 5:12", "translation": "WEB" }
+    },
+    {
+      "id": "fall-7",
       "type": "journal_prompt",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "When You Know Better",
       "body": "Talk about a time you knew something was wrong but did it anyway. How did it feel afterward? God still loved Adam and Eve after they disobeyed — how do you know he still loves you when you mess up?"
     }

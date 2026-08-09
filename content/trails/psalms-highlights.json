@@ -23,8 +23,8 @@
       "id": "psalms-highlights-3",
       "type": "verse",
       "sortOrder": 3,
-      "title": "Psalm 46:1",
-      "verse": { "reference": "Psalm 46:1", "translation": "WEB" }
+      "title": "Psalm 100:5",
+      "verse": { "reference": "Psalm 100:5", "translation": "WEB" }
     },
     {
       "id": "psalms-highlights-4",
@@ -35,8 +35,22 @@
     },
     {
       "id": "psalms-highlights-5",
-      "type": "journal_prompt",
+      "type": "verse",
       "sortOrder": 5,
+      "title": "Psalm 139:14",
+      "verse": { "reference": "Psalm 139:14", "translation": "WEB" }
+    },
+    {
+      "id": "psalms-highlights-6",
+      "type": "verse",
+      "sortOrder": 6,
+      "title": "Psalm 46:1",
+      "verse": { "reference": "Psalm 46:1", "translation": "WEB" }
+    },
+    {
+      "id": "psalms-highlights-7",
+      "type": "journal_prompt",
+      "sortOrder": 7,
       "title": "Which Psalm Fits Today?",
       "body": "Which Psalm sounds most like how you feel today -- happy, worried, thankful, sad? Look one up together."
     }

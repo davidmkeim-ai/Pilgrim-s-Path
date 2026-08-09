@@ -81,4 +81,6 @@ export interface Place {
   trailSlug: string;
   /** Slug of the place this one's path connects from, for drawing route lines on the map. Undefined for the root place (Eden). */
   connectsFrom?: string;
+  /** Slugs of other places this one has a secondary, thematic cross-link to (in addition to its primary connectsFrom spine), turning the map into a connected web with shortcuts instead of four isolated straight lines. */
+  crossLinks?: string[];
 }

@@ -30,13 +30,27 @@
       "id": "love-one-another-4",
       "type": "verse",
       "sortOrder": 4,
+      "title": "1 Corinthians 13:13",
+      "verse": { "reference": "1 Corinthians 13:13", "translation": "WEB" }
+    },
+    {
+      "id": "love-one-another-5",
+      "type": "verse",
+      "sortOrder": 5,
+      "title": "Romans 12:10",
+      "verse": { "reference": "Romans 12:10", "translation": "WEB" }
+    },
+    {
+      "id": "love-one-another-6",
+      "type": "verse",
+      "sortOrder": 6,
       "title": "1 John 4:19",
       "verse": { "reference": "1 John 4:19", "translation": "WEB" }
     },
     {
-      "id": "love-one-another-5",
+      "id": "love-one-another-7",
       "type": "challenge",
-      "sortOrder": 5,
+      "sortOrder": 7,
       "title": "An Act of Love",
       "body": "Do one specific act of love for a family member this week without being asked -- then write about it in the journal."
     }
