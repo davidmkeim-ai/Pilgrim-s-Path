@@ -98,7 +98,10 @@ export default function MapScreen() {
   // the canvas center regardless of where the user pinched.
   const focalPointLocal = useSharedValue({ x: 0, y: 0 });
 
-  const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
+  const clamp = (value: number, min: number, max: number) => {
+    'worklet';
+    return Math.min(Math.max(value, min), max);
+  };
 
   const clampTranslate = (nextScale: number) => {
     'worklet';
