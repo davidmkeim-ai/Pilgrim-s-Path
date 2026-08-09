@@ -63,11 +63,19 @@
         {
           "photosPermission": "Allow $(PRODUCT_NAME) to access your photos to add them to the family journal."
         }
-      ]
+      ],
+      "expo-asset",
+      "expo-image"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f8ece10d-75a3-4b20-b678-0e9ec47d5681"
     },
     "extra": {
       "router": {},

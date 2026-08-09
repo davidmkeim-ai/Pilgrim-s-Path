@@ -1,5 +1,20 @@
 {
   "enabledPlugins": {
     "expo@claude-plugins-official": true
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx expo lint)",
+      "Bash(npm install)",
+      "Bash(npx expo install --check)",
+      "Bash(npx expo install --fix)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(mkdir -p *)"
+    ]
   }
 }
